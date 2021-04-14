@@ -6,7 +6,7 @@ _REQUIRES = [
 
 setup(
     name="tfds-korean",
-    version="0.0.1a0",
+    version="0.0.1a1",
     author="Ukjae Jeong",
     author_email="jeongukjae@gmail.com",
     license="MIT",
