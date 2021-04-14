@@ -24,8 +24,8 @@ jobs:
         python -m pip install -r requirements.txt -r requirements-dev.txt
     - name: Lint and check code styles
       run: |
-        flake8 tfds_korean setup.py
-        black --check tfds_korean setup.py
-        isort --check tfds_korean setup.py
+        flake8 tfds_korean setup.py run_test.py
+        black --check tfds_korean setup.py run_test.py
+        isort --check tfds_korean setup.py run_test.py
     - name: Run all test cases
-      run: ./run-all-tests.sh
+      run: python run_test.py
