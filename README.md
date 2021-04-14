@@ -4,9 +4,9 @@ A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.
 
 ## Registered Datasets
 
-* `nsmc`
-* `korsts`
-* `kornli`
+* [`nsmc`](https://github.com/e9t/nsmc)
+* [`korsts` & `kornli`](https://github.com/kakaobrain/KorNLUDatasets)
+* [`question_pair`](https://github.com/songys/Question_pair)
 
 ## Usage
 

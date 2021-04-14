@@ -1,0 +1,2 @@
+question1	question2	is_duplicate
+이 셋은 validation셋일까요?	이 셋은 train셋일까요?	0

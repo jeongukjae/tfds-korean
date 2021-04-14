@@ -1,0 +1,2 @@
+question1	question2	is_duplicate
+테스트 질문까지 직접 작성하고 있으세요?	왜 그렇게까지 하세요?	0
