@@ -1,0 +1,9 @@
+[tool.black]
+line-length = 140
+target-version = ['py38']
+include = '\.py$'
+
+[tool.isort]
+line_length = 140
+multi_line_output = 3
+include_trailing_comma = true
