@@ -1,0 +1,31 @@
+name: Test Python
+
+on:
+  push:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install -r requirements.txt -r requirements-dev.txt
+    - name: Lint and check code styles
+      run: |
+        flake8 tfds_korean setup.py
+        black --check tfds_korean setup.py
+        isort --check tfds_korean setup.py
+    - name: Run all test cases
+      run: ./run-all-tests.sh
