@@ -17,13 +17,10 @@ _CITATION = """
 
 
 class Nsmc(tfds.core.GeneratorBasedBuilder):
-    """DatasetBuilder for nsmc dataset."""
-
     VERSION = tfds.core.Version("1.0.0")
     RELEASE_NOTES = {"1.0.0": "Initial release."}
 
     def _info(self) -> tfds.core.DatasetInfo:
-        """Returns the dataset metadata."""
         return tfds.core.DatasetInfo(
             builder=self,
             description=_DESCRIPTION,

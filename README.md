@@ -29,6 +29,6 @@ test_ds = ds['test'].batch(128)
 # ....
 # ....
 
-model.fit(train_dsd)
+model.fit(train_ds)
 model.evaluate(test_ds)
 ```
