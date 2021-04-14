@@ -44,9 +44,9 @@ class Korsts(tfds.core.GeneratorBasedBuilder):
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):
         splits = dl_manager.download(
             {
-                "train": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorSTS/sts-train.tsv",
-                "dev": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorSTS/sts-dev.tsv",
-                "test": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorSTS/sts-test.tsv",
+                "train": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/0df0fe7d496eb61b092e022e238c2230b29f1cbc/KorSTS/sts-train.tsv",
+                "dev": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/0df0fe7d496eb61b092e022e238c2230b29f1cbc/KorSTS/sts-dev.tsv",
+                "test": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/0df0fe7d496eb61b092e022e238c2230b29f1cbc/KorSTS/sts-test.tsv",
             }
         )
 

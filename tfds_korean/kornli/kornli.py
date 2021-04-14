@@ -42,10 +42,10 @@ class Kornli(tfds.core.GeneratorBasedBuilder):
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):
         splits = dl_manager.download(
             {
-                "mnli_train": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorNLI/multinli.train.ko.tsv",
-                "snli_train": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorNLI/snli_1.0_train.ko.tsv",
-                "xnli_dev": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorNLI/xnli.dev.ko.tsv",
-                "xnli_test": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorNLI/xnli.test.ko.tsv",
+                "mnli_train": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/0df0fe7d496eb61b092e022e238c2230b29f1cbc/KorNLI/multinli.train.ko.tsv",
+                "snli_train": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/0df0fe7d496eb61b092e022e238c2230b29f1cbc/KorNLI/snli_1.0_train.ko.tsv",
+                "xnli_dev": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/0df0fe7d496eb61b092e022e238c2230b29f1cbc/KorNLI/xnli.dev.ko.tsv",
+                "xnli_test": "https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/0df0fe7d496eb61b092e022e238c2230b29f1cbc/KorNLI/xnli.test.ko.tsv",
             }
         )
 

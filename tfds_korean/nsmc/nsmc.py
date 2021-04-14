@@ -38,8 +38,8 @@ class Nsmc(tfds.core.GeneratorBasedBuilder):
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):
         splits = dl_manager.download(
             {
-                "train": "https://raw.githubusercontent.com/e9t/nsmc/master/ratings_train.txt",
-                "test": "https://raw.githubusercontent.com/e9t/nsmc/master/ratings_test.txt",
+                "train": "https://raw.githubusercontent.com/e9t/nsmc/cc0670e872d4ac27bfe36c87456783004b39ef6c/ratings_train.txt",
+                "test": "https://raw.githubusercontent.com/e9t/nsmc/cc0670e872d4ac27bfe36c87456783004b39ef6c/ratings_test.txt",
             }
         )
 
