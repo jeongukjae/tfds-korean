@@ -1,7 +1,34 @@
 # tfds-korean
 
-한국어 관련 데이터셋을 TensorFlow Datasets로 불러올 수 있도록 만든 패키지입니다.
+A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.
 
-## 등록되어 있는 데이터셋
+## Registered Datasets
 
 * nsmc
+
+## Usage
+
+### Installation
+
+```sh
+pip install tfds-korean
+```
+
+### Loading dataset
+
+```python
+import tensorflow_datasets as tfds
+import tfds_korean.nsmc # register nsmc dataset
+
+ds = tfds.load('nsmc')
+
+train_ds = ds['train'].batch(32)
+test_ds = ds['test'].batch(128)
+
+# define model
+# ....
+# ....
+
+model.fit(train_dsd)
+model.evaluate(test_ds)
+```
