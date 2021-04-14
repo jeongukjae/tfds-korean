@@ -1,0 +1,4 @@
+https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorNLI/multinli.train.ko.tsv	83550821	dca5bf65597af45b139a5fbc8aa3587b612b391446475617b8faa09e5dfcd349	multinli.train.ko.tsv
+https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorNLI/snli_1.0_train.ko.tsv	78486224	aaf12d8955fcda2b14319e5cabb9b31824c6f504aede460c975b518911f484c0	snli_1.0_train.ko.tsv
+https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorNLI/xnli.dev.ko.tsv	511383	821fb1c1c2e538ac2724a6132da36ffa379eb9a542ceb89243b3cf711377382c	xnli.dev.ko.tsv
+https://raw.githubusercontent.com/kakaobrain/KorNLUDatasets/master/KorNLI/xnli.test.ko.tsv	1032430	0db53cf8e182283a0d0404ec3fe1b15d1e29236d23d22082dc20d43067254b3e	xnli.test.ko.tsv

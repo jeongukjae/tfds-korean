@@ -62,7 +62,7 @@ class Korsts(tfds.core.GeneratorBasedBuilder):
         with split_file.open() as f:
             next(f)
             for line in f:
-                row = line.split("\t")
+                row = line.strip().split("\t")
                 yield f"{row[columns['filename']]}-{row[columns['year']]}-{row[columns['id']]}", {
                     "genre": row[columns["genre"]],
                     "filename": row[columns["filename"]],

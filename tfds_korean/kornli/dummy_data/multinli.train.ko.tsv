@@ -1,0 +1,4 @@
+sentence1	sentence2	gold_label
+문장1	문장1	contradiction
+문장2	문장3	neutral
+문장4	문장7	entailment
