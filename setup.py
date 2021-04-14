@@ -9,7 +9,7 @@ setup(
     version="0.0.1a0",
     author="Ukjae Jeong",
     author_email="jeongukjae@gmail.com",
-    license='MIT',
+    license="MIT",
     url="https://github.com/jeongukjae/tfds-korean",
     install_requires=_REQUIRES,
     keywords=["tensorflow", "machine learning", "dataset"],
