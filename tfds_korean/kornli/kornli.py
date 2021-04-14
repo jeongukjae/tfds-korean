@@ -50,10 +50,10 @@ class Kornli(tfds.core.GeneratorBasedBuilder):
         )
 
         return {
-            "mnli_train": self._generate_examples(splits["mnli_train"], prefix='mnli_train'),
-            "snli_train": self._generate_examples(splits["snli_train"], prefix='snli_train'),
-            "xnli_dev": self._generate_examples(splits["xnli_dev"], prefix='xnli_dev'),
-            "xnli_test": self._generate_examples(splits["xnli_test"], prefix='xnli_test'),
+            "mnli_train": self._generate_examples(splits["mnli_train"], prefix="mnli_train"),
+            "snli_train": self._generate_examples(splits["snli_train"], prefix="snli_train"),
+            "xnli_dev": self._generate_examples(splits["xnli_dev"], prefix="xnli_dev"),
+            "xnli_test": self._generate_examples(splits["xnli_test"], prefix="xnli_test"),
         }
 
     def _generate_examples(self, split_file, prefix):
