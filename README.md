@@ -6,6 +6,7 @@ A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.
 
 * `nsmc`
 * `korsts`
+* `kornli`
 
 ## Usage
 
