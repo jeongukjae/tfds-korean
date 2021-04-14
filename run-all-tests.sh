@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 TEST_CASES=`find tfds_korean -name "*test.py"`
 
 for test_case in $TEST_CASES ; do

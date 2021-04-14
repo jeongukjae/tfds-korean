@@ -4,7 +4,8 @@ A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.
 
 ## Registered Datasets
 
-* nsmc
+* `nsmc`
+* `korsts`
 
 ## Usage
 
