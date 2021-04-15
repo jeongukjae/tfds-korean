@@ -10,6 +10,7 @@ A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.
 * [`para_kqc`](https://github.com/warnikchow/paraKQC)
 * [`korean_hate_speech/labeled`, `korean_hate_speech/unlabeled`](https://github.com/kocohub/korean-hate-speech)
 * [`korean_chatbot_qa_data`](https://github.com/songys/Chatbot_data)
+* [`nlp_challenge/srl` & `nlp_challenge/ner`](https://github.com/naver/nlp-challenge)
 
 ## Usage
 

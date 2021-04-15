@@ -1,0 +1,15 @@
+1	나는	-
+2	2캔의	NUM_B
+3	트레비를	CVL_B
+4	마셨다	-
+5	.	-
+
+1	token1	tag1
+2	token2	tag2
+3	token3	tag1
+4	token4	tag3
+
+1	token6	tag1
+2	token9	tag60
+3	token112	tag1
+4	token0	tag3
