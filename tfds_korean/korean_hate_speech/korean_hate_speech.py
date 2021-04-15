@@ -1,8 +1,8 @@
 """korean_hate_speech dataset."""
 
 import csv
-from typing import Iterator, Dict, Tuple
 import itertools
+from typing import Dict, Iterator, Tuple
 
 import tensorflow_datasets as tfds
 
@@ -49,7 +49,7 @@ class KoreanHateSpeech(tfds.core.GeneratorBasedBuilder):
             name="unlabeled",
             labeled=False,
             description="Korean hate speech dataset (unlabeled)",
-        )
+        ),
     ]
 
     def _info(self) -> tfds.core.DatasetInfo:
@@ -90,10 +90,7 @@ class KoreanHateSpeech(tfds.core.GeneratorBasedBuilder):
             downloaded_files = dl_manager.download(files_to_download)
             return {
                 "train": itertools.chain(
-                    *[
-                        self._generate_examples(downloaded_files[f"{i}"], downloaded_files[f"{i}_title"], str(i))
-                        for i in range(num_shard)
-                    ]
+                    *[self._generate_examples(downloaded_files[f"{i}"], downloaded_files[f"{i}_title"], str(i)) for i in range(num_shard)]
                 )
             }
 

@@ -2,4 +2,4 @@
 
 from .korean_hate_speech import KoreanHateSpeech
 
-__all__ = ['KoreanHateSpeech']
+__all__ = ["KoreanHateSpeech"]

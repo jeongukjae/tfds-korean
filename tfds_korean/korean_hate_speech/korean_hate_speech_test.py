@@ -8,7 +8,7 @@ class KoreanHateSpeechLabeledTest(tfds.testing.DatasetBuilderTestCase):
     """Tests for labeled korean_hate_speech dataset."""
 
     DATASET_CLASS = korean_hate_speech.KoreanHateSpeech
-    BUILDER_CONFIG_NAMES_TO_TEST = ['labeled']
+    BUILDER_CONFIG_NAMES_TO_TEST = ["labeled"]
     SPLITS = {
         "train": 3,
         "dev": 1,
@@ -29,7 +29,7 @@ class KoreanHateSpeechUnlabeledTest(tfds.testing.DatasetBuilderTestCase):
     """Tests for unlabeled korean_hate_speech dataset."""
 
     DATASET_CLASS = korean_hate_speech.KoreanHateSpeech
-    BUILDER_CONFIG_NAMES_TO_TEST = ['unlabeled']
+    BUILDER_CONFIG_NAMES_TO_TEST = ["unlabeled"]
     SPLITS = {
         "train": 3,
     }
