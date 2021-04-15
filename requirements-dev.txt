@@ -3,3 +3,7 @@ isort
 flake8
 
 tensorflow
+
+# for building catalog
+jinja2
+pandas
