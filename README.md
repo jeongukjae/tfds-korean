@@ -7,7 +7,8 @@ A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.
 * [`nsmc`](https://github.com/e9t/nsmc)
 * [`korsts` & `kornli`](https://github.com/kakaobrain/KorNLUDatasets)
 * [`question_pair`](https://github.com/songys/Question_pair)
-* [`paraKQC`](https://github.com/warnikchow/paraKQC)
+* [`para_kqc`](https://github.com/warnikchow/paraKQC)
+* [`korean_hate_speech/labeled`, `korean_hate_speech/unlabeled`](https://github.com/kocohub/korean-hate-speech)
 
 ## Usage
 
