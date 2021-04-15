@@ -1,14 +1,19 @@
+import os
+
 from setuptools import find_packages, setup
 
-_REQUIRES = [
-    "tensorflow-datasets",
-]
+with open(os.path.join(os.path.dirname(__file__), "README.md"), encoding="utf-8") as f:
+    long_description = f.read()
+
+_REQUIRES = ["tensorflow-datasets", "tensorflow"]
 
 setup(
     name="tfds-korean",
     version="0.0.1a3",
     author="Ukjae Jeong",
     author_email="jeongukjae@gmail.com",
+    description="A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.",
+    long_description=long_description,
     license="MIT",
     url="https://github.com/jeongukjae/tfds-korean",
     install_requires=_REQUIRES,
