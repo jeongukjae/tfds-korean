@@ -14,6 +14,8 @@ back_to_top_text: "Back to top"
 
 nav_sort: case_sensitive
 
+ga_tracking: G-8D1JGSW9P5
+
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub."
 gh_edit_repository: "https://github.com/jeongukjae/tfds-korean"
