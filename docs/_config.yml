@@ -1,0 +1,28 @@
+title: tfds-korean
+remote_theme: pmarsceill/just-the-docs
+
+search_enabled: true
+aux_links_new_tab: true
+aux_links:
+  "tfds-korean on GitHub":
+    - "//github.com/jeongukjae/tfds-korean"
+heading_anchors: true
+
+footer_content: "Copyright &copy; 2021- Ukjae Jeong. Distributed by an <a href=\"https://github.com/jeongukjae/tfds-korean/tree/main/LICENSE\">MIT license.</a>"
+back_to_top: true
+back_to_top_text: "Back to top"
+
+nav_sort: case_sensitive
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/jeongukjae/tfds-korean"
+gh_edit_branch: "main"
+gh_edit_source: "docs"
+gh_edit_view_mode: "tree"
+
+baseurl: "/tfds-korean" # the subpath of your site, e.g. /blog
+url: "https://jeongukjae.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+plugins:
+  - jekyll-seo-tag

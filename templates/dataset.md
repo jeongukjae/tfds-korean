@@ -24,7 +24,7 @@ title: {{ name }}
 * Dataset size: `{{ dataset_size }}`
 * Features:
 
-  ```text{% set feature_lines = features.split('\n') %}{% for line in feature_lines %}
+  ```python{% set feature_lines = features.split('\n') %}{% for line in feature_lines %}
   {{ line }}{% endfor %}
   ```
 

@@ -37,7 +37,7 @@ title: {{ name }}
 * Download size: `{{ config.download_size }}`
 * Features:
 
-  ```text{% set feature_lines = config.features.split('\n') %}{% for line in feature_lines %}
+  ```python{% set feature_lines = config.features.split('\n') %}{% for line in feature_lines %}
   {{ line }}{% endfor %}
   ```
 
