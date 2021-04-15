@@ -2,15 +2,11 @@
 
 A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.
 
-## Registered Datasets
+[**documentation**](https://jeongukjae.github.io/tfds-korean) | [**pypi**](https://pypi.org/project/tfds-korean/)
 
-* [`nsmc`](https://github.com/e9t/nsmc)
-* [`korsts` & `kornli`](https://github.com/kakaobrain/KorNLUDatasets)
-* [`question_pair`](https://github.com/songys/Question_pair)
-* [`para_kqc`](https://github.com/warnikchow/paraKQC)
-* [`korean_hate_speech/labeled`, `korean_hate_speech/unlabeled`](https://github.com/kocohub/korean-hate-speech)
-* [`korean_chatbot_qa_data`](https://github.com/songys/Chatbot_data)
-* [`nlp_challenge/srl` & `nlp_challenge/ner`](https://github.com/naver/nlp-challenge)
+![PyPI - License](https://img.shields.io/pypi/l/tfds-korean)
+![PyPI](https://img.shields.io/pypi/v/tfds-korean)
+[![Test Python](https://github.com/jeongukjae/tfds-korean/actions/workflows/test-python.yml/badge.svg)](https://github.com/jeongukjae/tfds-korean/actions/workflows/test-python.yml)
 
 ## Usage
 
