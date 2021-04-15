@@ -2,9 +2,10 @@ import argparse
 import importlib
 import os
 from typing import Iterable
+
 import tensorflow_datasets.public_api as tfds
-from jinja2 import Template
 from absl import logging
+from jinja2 import Template
 
 from . import __version__
 
@@ -92,7 +93,7 @@ def main():
             version=str(builder.info.version),
             release_notes=list(builder.release_notes.items()),
             citation=str(builder.info.citation),
-            default_config=str(builder.BUILDER_CONFIGS[0].name)
+            default_config=str(builder.BUILDER_CONFIGS[0].name),
         )
         config_infos = []
         for config in builder.BUILDER_CONFIGS:
