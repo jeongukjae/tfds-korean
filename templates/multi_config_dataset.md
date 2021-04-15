@@ -29,7 +29,7 @@ title: {{ name }}
 ## Configs
 
 {% for config in configs %}
-### {{name}}/{{config.name}} {{ config.name == configs[0].name and '(default)' }}
+### {{name}}/{{config.name}} {{ config.name == configs[0].name and '(default)' or '' }}
 
 {{ config.description | safe }}
 
