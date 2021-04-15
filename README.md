@@ -35,3 +35,7 @@ test_ds = ds['test'].batch(128)
 model.fit(train_ds)
 model.evaluate(test_ds)
 ```
+
+## Licenses
+
+The license for this repository and licenses for datasets are applied separately. It is recommended to use each dataset after checking the dataset's website.
