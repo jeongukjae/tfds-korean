@@ -8,10 +8,10 @@ from . import kornli
 class KornliTest(tfds.testing.DatasetBuilderTestCase):
     DATASET_CLASS = kornli.Kornli
     SPLITS = {
-        "mnli_train": 3,  # Number of fake train example
-        "snli_train": 3,  # Number of fake test example
-        "xnli_dev": 1,  # Number of fake test example
-        "xnli_test": 1,  # Number of fake test example
+        "mnli_train": 3,
+        "snli_train": 3,
+        "xnli_dev": 1,
+        "xnli_test": 1,
     }
 
     DL_EXTRACT_RESULT = {

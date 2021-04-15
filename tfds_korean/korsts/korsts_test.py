@@ -10,9 +10,9 @@ class KorstsTest(tfds.testing.DatasetBuilderTestCase):
 
     DATASET_CLASS = korsts.Korsts
     SPLITS = {
-        "train": 3,  # Number of fake train example
-        "dev": 1,  # Number of fake test example
-        "test": 1,  # Number of fake test example
+        "train": 3,
+        "dev": 1,
+        "test": 1,
     }
 
     DL_EXTRACT_RESULT = {

@@ -10,9 +10,9 @@ class QuestionPairTest(tfds.testing.DatasetBuilderTestCase):
 
     DATASET_CLASS = question_pair.QuestionPair
     SPLITS = {
-        "train": 3,  # Number of fake train example
-        "test": 1,  # Number of fake test example
-        "validation": 1,  # Number of fake test example
+        "train": 3,
+        "test": 1,
+        "validation": 1,
     }
 
     DL_EXTRACT_RESULT = {"train": "train.txt", "test": "test.txt", "validation": "validation.txt"}
