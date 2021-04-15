@@ -22,14 +22,14 @@ title: Catalog
 
 ## All datasets
 
-* [korean_chatbot_qa_data](./datasets/korean_chatbot_qa_data.md)
-* [korean_hate_speech](./datasets/korean_hate_speech.md)
-* [kornli](./datasets/kornli.md)
-* [korsts](./datasets/korsts.md)
-* [nlp_challenge](./datasets/nlp_challenge.md)
-* [nsmc](./datasets/nsmc.md)
-* [para_kqc](./datasets/para_kqc.md)
-* [question_pair](./datasets/question_pair.md)
+* [korean_chatbot_qa_data](./datasets/korean_chatbot_qa_data.html)
+* [korean_hate_speech](./datasets/korean_hate_speech.html)
+* [kornli](./datasets/kornli.html)
+* [korsts](./datasets/korsts.html)
+* [nlp_challenge](./datasets/nlp_challenge.html)
+* [nsmc](./datasets/nsmc.html)
+* [para_kqc](./datasets/para_kqc.html)
+* [question_pair](./datasets/question_pair.html)
 
 
 ## Licenses

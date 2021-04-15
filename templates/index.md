@@ -22,7 +22,7 @@ title: Catalog
 
 ## All datasets
 
-{% for dataset_name in dataset_names %}* [{{ dataset_name }}](./datasets/{{ dataset_name }}.md)
+{% for dataset_name in dataset_names %}* [{{ dataset_name }}](./datasets/{{ dataset_name }}.html)
 {% endfor %}
 
 ## Licenses
