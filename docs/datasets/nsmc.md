@@ -60,7 +60,7 @@ The dataset construction is based on the method noted in [Large movie review dat
 * Citation:
 
   ```text
-
+  
   ```
 
 ## How to use this dataset

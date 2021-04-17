@@ -3,7 +3,7 @@ layout: default
 title: Catalog
 ---
 
-# tfds-korean(`0.0.1a2`) Catalog
+# tfds-korean(`0.0.1a3`) Catalog
 
 ## Usage
 
@@ -24,6 +24,7 @@ title: Catalog
 
 * [korean_chatbot_qa_data](./datasets/korean_chatbot_qa_data.html)
 * [korean_hate_speech](./datasets/korean_hate_speech.html)
+* [korean_parallel_corpora](./datasets/korean_parallel_corpora.html)
 * [kornli](./datasets/kornli.html)
 * [korsts](./datasets/korsts.html)
 * [nlp_challenge](./datasets/nlp_challenge.html)
