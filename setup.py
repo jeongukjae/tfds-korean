@@ -14,6 +14,7 @@ setup(
     author_email="jeongukjae@gmail.com",
     description="A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     license="MIT",
     url="https://github.com/jeongukjae/tfds-korean",
     install_requires=_REQUIRES,
