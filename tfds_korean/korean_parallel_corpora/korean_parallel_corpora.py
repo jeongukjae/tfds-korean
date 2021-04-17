@@ -13,7 +13,7 @@ _CITATION = """
 @inproceedings{park-etal-2017-building,
     title = "Building a Better Bitext for Structurally Different Languages through Self-training",
     author = {Park, Jungyeul  and
-      Dugast, Lo{\"\i}c  and
+      Dugast, Lo{\\"\\i}c  and
       Hong, Jeen-Pyo  and
       Shin, Chang-Uk  and
       Cha, Jeong-Won},

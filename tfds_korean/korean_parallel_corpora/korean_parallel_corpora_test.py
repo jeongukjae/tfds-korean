@@ -3,7 +3,7 @@
 import tensorflow_datasets as tfds
 
 from . import korean_parallel_corpora
-from .korean_parallel_corpora import BIBLE_NAME, JHE_NAME, NEWS_NAME, NORTH_KOREAN_NEWS_NAME, FRENCH_JIM_NAME
+from .korean_parallel_corpora import BIBLE_NAME, FRENCH_JIM_NAME, JHE_NAME, NEWS_NAME, NORTH_KOREAN_NEWS_NAME
 
 
 class KoreanParallelCorporaNewsTest(tfds.testing.DatasetBuilderTestCase):
