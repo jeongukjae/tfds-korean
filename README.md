@@ -35,6 +35,10 @@ model.fit(train_ds)
 model.evaluate(test_ds)
 ```
 
+## Examples
+
+* [Loading NSMC dataset using tfds-korean](./examples/tfds_print_nsmc_rows.ipynb)
+
 ## Licenses
 
 The license for this repository and licenses for datasets are applied separately. It is recommended to use each dataset after checking the dataset's website.
