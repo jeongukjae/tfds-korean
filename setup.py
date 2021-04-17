@@ -9,7 +9,7 @@ _REQUIRES = ["tensorflow-datasets", "tensorflow"]
 
 setup(
     name="tfds-korean",
-    version="0.0.1a3",
+    version="0.0.1.a4",
     author="Ukjae Jeong",
     author_email="jeongukjae@gmail.com",
     description="A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.",
