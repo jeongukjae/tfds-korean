@@ -13,7 +13,7 @@ _CITATION = """
   year = {2018},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/naver/nlp-challenge}},
+  howpublished = {\\url{https://github.com/naver/nlp-challenge}},
   commit = {a51654472e0da75cd37c6e73ffe583db78e68323}
 }
 """
