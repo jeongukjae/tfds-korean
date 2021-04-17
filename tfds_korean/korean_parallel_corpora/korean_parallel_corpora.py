@@ -118,10 +118,10 @@ class KoreanParallelCorpora(tfds.core.GeneratorBasedBuilder):
         if self.builder_config.name == JHE_NAME:
             splits = dl_manager.download(
                 {
-                    "dev.ko": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/korean-english-jhe/jhe-koen-dev.ko",
-                    "dev.en": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/korean-english-jhe/jhe-koen-dev.en",
-                    "eval.ko": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/korean-english-jhe/jhe-koen-eval.ko",
-                    "eval.en": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/korean-english-jhe/jhe-koen-eval.en",
+                    "dev.ko": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/korean-english-jhe/jhe-koen-dev.ko",
+                    "dev.en": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/korean-english-jhe/jhe-koen-dev.en",
+                    "eval.ko": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/korean-english-jhe/jhe-koen-eval.en",
+                    "eval.en": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/korean-english-jhe/jhe-koen-eval.en",
                 }
             )
 
@@ -156,10 +156,10 @@ class KoreanParallelCorpora(tfds.core.GeneratorBasedBuilder):
         if self.builder_config.name == NORTH_KOREAN_NEWS_NAME:
             splits = dl_manager.download(
                 {
-                    "dev.nk": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/northkorean-english-news-v1/northkorean-english.dev.nk",
-                    "dev.en": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/northkorean-english-news-v1/northkorean-english.dev.en",
-                    "test.nk": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/northkorean-english-news-v1/northkorean-english.test.nk",
-                    "test.en": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/northkorean-english-news-v1/northkorean-english.test.en",
+                    "dev.nk": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/northkorean-english-news-v1/northkorean-english.dev.nk",
+                    "dev.en": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/northkorean-english-news-v1/northkorean-english.dev.en",
+                    "test.nk": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/northkorean-english-news-v1/northkorean-english.test.nk",
+                    "test.en": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/northkorean-english-news-v1/northkorean-english.test.en",
                 }
             )
 
@@ -171,8 +171,8 @@ class KoreanParallelCorpora(tfds.core.GeneratorBasedBuilder):
         if self.builder_config.name == BIBLE_NAME:
             splits = dl_manager.download(
                 {
-                    "train.ko": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/bible/bible-all.kr.txt",
-                    "train.en": "https://github.com/jungyeul/korean-parallel-corpora/blob/07883d4cae4e309dfde8c48c5f37ebea0b59574e/bible/bible-all.en.txt",
+                    "train.ko": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/bible/bible-all.kr.txt",
+                    "train.en": "https://raw.githubusercontent.com/jungyeul/korean-parallel-corpora/07883d4cae4e309dfde8c48c5f37ebea0b59574e/bible/bible-all.en.txt",
                 }
             )
 
