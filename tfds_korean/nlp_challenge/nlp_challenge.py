@@ -6,8 +6,16 @@ _DESCRIPTION = """
 네이버, 창원대가 함께하는 NLP Challenge 기술 대회의 NER/SRL 데이터
 """
 
-# TODO(nlp_challenge): BibTeX citation
 _CITATION = """
+@misc{Naver2018,
+  author = {Naver},
+  title = {NLP Challenge},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\\url{https://github.com/naver/nlp-challenge}},
+  commit = {a51654472e0da75cd37c6e73ffe583db78e68323}
+}
 """
 
 VERSION = tfds.core.Version("1.0.0")

@@ -23,7 +23,15 @@ title: nlp_challenge
 * Citation:
 
   ```text
-  
+  @misc{Naver2018,
+    author = {Naver},
+    title = {NLP Challenge},
+    year = {2018},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    howpublished = {\url{https://github.com/naver/nlp-challenge}},
+    commit = {a51654472e0da75cd37c6e73ffe583db78e68323}
+  }
   ```
 
 ## Configs
