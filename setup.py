@@ -20,7 +20,6 @@ setup(
     keywords=["tensorflow", "machine learning", "dataset"],
     packages=find_packages(),
     include_package_data=True,
-    package_data={"tfds_korean": ["*/checksums.tsv"]},
     python_requires=">=3.6",
     classifiers=[
         "Development Status :: 3 - Alpha",

@@ -1,1 +1,2 @@
 global-include checksums.tsv
+include tfds_korean/kmounlp_ner/filelist.txt
