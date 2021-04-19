@@ -48,9 +48,7 @@ class KmounlpNer(tfds.core.GeneratorBasedBuilder):
             [f"https://raw.githubusercontent.com/kmounlp/NER/master/말뭉치%20-%20형태소_개체명/{filename.strip()}" for filename in files]
         )
 
-        return {
-            "train": self._generate_examples(train_files)
-        }
+        return {"train": self._generate_examples(train_files)}
 
     def _generate_examples(self, train_files):
         for train_file in train_files:
