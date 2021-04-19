@@ -54,9 +54,9 @@ NLP Challenge NER dataset
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |90000|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |90000|
 
 * Examples:
 
@@ -101,9 +101,9 @@ NLP Challenge SRL dataset
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |34857|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |34857|
 
 * Examples:
 

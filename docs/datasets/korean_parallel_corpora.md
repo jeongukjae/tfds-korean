@@ -27,7 +27,7 @@ Jungyeul Park, Jeen-Pyo Hong and Jeong-Won Cha (2016) Korean Language Resources 
   @inproceedings{park-etal-2017-building,
       title = "Building a Better Bitext for Structurally Different Languages through Self-training",
       author = {Park, Jungyeul  and
-        Dugast, Lo{"\i}c  and
+        Dugast, Lo{\"\i}c  and
         Hong, Jeen-Pyo  and
         Shin, Chang-Uk  and
         Cha, Jeong-Won},
@@ -62,11 +62,11 @@ None
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |94123|1|
-  |dev  |1000|1|
-  |test  |2000|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |94123|
+  |dev  |1000|
+  |test  |2000|
 
 * Examples:
 
@@ -111,10 +111,10 @@ None
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |dev  |720|1|
-  |eval  |720|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |dev  |720|
+  |eval  |720|
 
 * Examples:
 
@@ -159,10 +159,10 @@ None
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |207|1|
-  |test  |4|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |207|
+  |test  |4|
 
 * Examples:
 
@@ -207,10 +207,10 @@ None
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |dev  |1000|1|
-  |test  |2000|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |dev  |1000|
+  |test  |2000|
 
 * Examples:
 
@@ -255,9 +255,9 @@ None
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |31103|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |31103|
 
 * Examples:
 

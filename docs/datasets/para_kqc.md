@@ -41,9 +41,9 @@ paper: https://www.aclweb.org/anthology/2020.lrec-1.842/
 * Supervised keys: `None`
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |1000|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |1000|
 
 * Examples:
 

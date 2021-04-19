@@ -37,10 +37,10 @@ The dataset construction is based on the method noted in [Large movie review dat
 * Supervised keys: `('document', 'label')`
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |150000|1|
-  |test  |50000|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |150000|
+  |test  |50000|
 
 * Examples:
 

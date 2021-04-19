@@ -43,9 +43,9 @@ title: {{ name }}
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|{% for l in config.splits %}
-  |{{ l[0] }}  |{{l[1].num_examples}}|{{l[1].num_shards}}|{% endfor %}
+  | Split Name | Num Examples        |
+  |------------|--------------------:|{% for l in config.splits %}
+  |{{ l[0] }}  |{{l[1].num_examples}}|{% endfor %}
 
 * Examples:
 

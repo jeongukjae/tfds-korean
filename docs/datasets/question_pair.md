@@ -36,11 +36,11 @@ title: question_pair
 * Supervised keys: `None`
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |6136|1|
-  |test  |758|1|
-  |validation  |682|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |6136|
+  |test  |758|
+  |validation  |682|
 
 * Examples:
 

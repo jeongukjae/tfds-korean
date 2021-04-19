@@ -38,11 +38,11 @@ The dataset for the paper [_KorNLI and KorSTS: New Benchmark Datasets for Korean
 * Supervised keys: `None`
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |5749|1|
-  |dev  |1500|1|
-  |test  |1379|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |5749|
+  |dev  |1500|
+  |test  |1379|
 
 * Examples:
 

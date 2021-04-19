@@ -62,11 +62,11 @@ Korean hate speech dataset (labeled)
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |7896|1|
-  |dev  |471|1|
-  |test  |974|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |7896|
+  |dev  |471|
+  |test  |974|
 
 * Examples:
 
@@ -111,9 +111,9 @@ Korean hate speech dataset (unlabeled)
 
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |2033893|8|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |2033893|
 
 * Examples:
 

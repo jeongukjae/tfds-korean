@@ -35,9 +35,9 @@ Chatbot_data_for_Korean v1.0
 * Supervised keys: `None`
 * Splits:
 
-  | Split Name | Num Examples        | Num Shards        |
-  |------------|--------------------:|------------------:|
-  |train  |11823|1|
+  | Split Name | Num Examples        |
+  |------------|--------------------:|
+  |train  |11823|
 
 * Examples:
 
