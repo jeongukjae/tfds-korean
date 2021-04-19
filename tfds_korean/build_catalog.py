@@ -100,7 +100,9 @@ def main():
             builder = tfds.builder(f"{pkg}/{config.name}")
             builder.download_and_prepare()
 
-            ds_df = tfds.as_dataframe(builder.as_dataset()[list(builder.info.splits.keys())[0]], builder.info)[:10]
+            read_config = tfds.ReadConfig(skip_prefetch=True)
+            builder_dataset = builder.as_dataset(read_config=read_config)[list(builder.info.splits.keys())[0]].take(10)
+            ds_df = tfds.as_dataframe(builder_dataset, builder.info)
             decoded_ds_df_values = _decode_df_values(ds_df.values)
 
             config_infos.append(
