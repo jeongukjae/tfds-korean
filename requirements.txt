@@ -1,2 +1,2 @@
-tensorflow-datasets
-tensorflow
+tensorflow-datasets>=4.2
+tensorflow>=2.1

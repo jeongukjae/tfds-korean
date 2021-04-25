@@ -5,7 +5,10 @@ from setuptools import find_packages, setup
 with open(os.path.join(os.path.dirname(__file__), "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
-_REQUIRES = ["tensorflow-datasets", "tensorflow"]
+_REQUIRES = [
+    "tensorflow-datasets>=4.2",
+    "tensorflow>=2.1",
+]
 
 setup(
     name="tfds-korean",
