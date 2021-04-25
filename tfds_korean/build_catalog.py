@@ -52,6 +52,7 @@ def main():
     with open(os.path.join(args.catalog_output, "index.md"), "w", encoding="utf8") as f:
         print(index_template.render(version=__version__, dataset_names=dataset_pkgs), file=f)
 
+    ds_read_config = tfds.ReadConfig(skip_prefetch=True)
     logging.info("Render dataset catalogs")
     for pkg in dataset_pkgs:
         logging.info(f"Render dataset {pkg}")
@@ -62,7 +63,9 @@ def main():
         if len(builder.BUILDER_CONFIGS) == 0:
             builder.download_and_prepare()
             with open(os.path.join(dataset_doc_path, f"{pkg}.md"), "w", encoding="utf8") as f:
-                ds_df = tfds.as_dataframe(builder.as_dataset()[list(builder.info.splits.keys())[0]], builder.info)[:10]
+                split_key = list(builder.info.splits.keys())[0]
+                builder_dataset = builder.as_dataset(split=split_key, read_config=ds_read_config).take(10)
+                ds_df = tfds.as_dataframe(builder_dataset, builder.info)
                 decoded_ds_df_values = _decode_df_values(ds_df.values)
                 logging.info("Saving...")
                 print(
@@ -100,8 +103,8 @@ def main():
             builder = tfds.builder(f"{pkg}/{config.name}")
             builder.download_and_prepare()
 
-            read_config = tfds.ReadConfig(skip_prefetch=True)
-            builder_dataset = builder.as_dataset(read_config=read_config)[list(builder.info.splits.keys())[0]].take(10)
+            split_key = list(builder.info.splits.keys())[0]
+            builder_dataset = builder.as_dataset(split=split_key, read_config=ds_read_config).take(10)
             ds_df = tfds.as_dataframe(builder_dataset, builder.info)
             decoded_ds_df_values = _decode_df_values(ds_df.values)
 
@@ -129,7 +132,7 @@ def _decode_df_values(df_values):
 
 def _decode_cell(cell):
     if isinstance(cell, bytes):
-        value = cell.decode("utf8").strip().replace("\n", " ")
+        value = cell.decode("utf8").strip().replace("\n", "<br>")
         if len(value) > 50:
             value = value[:47] + "..."
         return value
