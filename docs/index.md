@@ -20,6 +20,11 @@ title: Dataset Catalog
 
 * For more details, see [tfds docs(https://www.tensorflow.org/datasets)](https://www.tensorflow.org/datasets).
 
+### Examples
+
+* [Loading NSMC dataset](https://github.com/jeongukjae/tfds-korean/blob/main/examples/nsmc_loading_datasets.ipynb)
+* [Training a classifier using Korean hate speech dataset](https://github.com/jeongukjae/tfds-korean/blob/main/examples/korean_hate_speech_lstm.ipynb)
+
 ## All datasets
 
 * [kmounlp_ner](./datasets/kmounlp_ner.html)
