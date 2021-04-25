@@ -3,7 +3,7 @@ layout: default
 title: Dataset Catalog
 ---
 
-# tfds-korean(`0.0.1a4`) Catalog
+# tfds-korean(`0.1.0`) Catalog
 
 ## Usage
 
@@ -28,6 +28,7 @@ title: Dataset Catalog
 * [korean_parallel_corpora](./datasets/korean_parallel_corpora.html)
 * [kornli](./datasets/kornli.html)
 * [korsts](./datasets/korsts.html)
+* [namuwikitext](./datasets/namuwikitext.html)
 * [nlp_challenge](./datasets/nlp_challenge.html)
 * [nsmc](./datasets/nsmc.html)
 * [para_kqc](./datasets/para_kqc.html)
