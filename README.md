@@ -37,7 +37,8 @@ model.evaluate(test_ds)
 
 ## Examples
 
-* [Loading NSMC dataset using tfds-korean](./examples/tfds_print_nsmc_rows.ipynb)
+* [Loading NSMC dataset](./examples/nsmc_loading_datasets.ipynb)
+* [Training a classifier using Korean hate speech dataset](./examples/korean_hate_speech_lstm.ipynb)
 
 ## Licenses
 
