@@ -34,7 +34,7 @@ class Kornli(tfds.core.GeneratorBasedBuilder):
                     "gold_label": tfds.features.ClassLabel(names=["neutral", "contradiction", "entailment"]),
                 }
             ),
-            supervised_keys=None,  # TODO ((sentence1, sentence2), gold_label)
+            supervised_keys=None,
             homepage="https://github.com/kakaobrain/KorNLUDatasets",
             citation=_CITATION,
         )

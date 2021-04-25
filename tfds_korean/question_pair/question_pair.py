@@ -34,7 +34,7 @@ class QuestionPair(tfds.core.GeneratorBasedBuilder):
                     "is_duplicate": tfds.features.ClassLabel(names=["0", "1"]),
                 }
             ),
-            supervised_keys=None,  # TODO ((question1, question2), is_duplicate)
+            supervised_keys=None,
             homepage="https://github.com/songys/Question_pair",
             citation=_CITATION,
         )

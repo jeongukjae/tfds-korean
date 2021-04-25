@@ -36,7 +36,7 @@ class Korsts(tfds.core.GeneratorBasedBuilder):
                     "score": tfds.features.Tensor(shape=[], dtype=tf.float32),
                 }
             ),
-            supervised_keys=None,  # TODO ((sentence1, sentence2), score)
+            supervised_keys=None,
             homepage="https://github.com/kakaobrain/KorNLUDatasets",
             citation=_CITATION,
         )
