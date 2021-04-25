@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Catalog
+title: Dataset Catalog
 ---
 
 # tfds-korean(`{{version}}`) Catalog
