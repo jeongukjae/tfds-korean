@@ -6,9 +6,10 @@ _DESCRIPTION = """
 Korean Parallel corpora (of https://sites.google.com/site/koreanparalleldata/)
 
 Jungyeul Park, Jeen-Pyo Hong and Jeong-Won Cha (2016) Korean Language Resources for Everyone. In Proceedings of the 30th Pacific Asia Conference on Language, Information and Computation (PACLIC 30). October 28 - 30, 2016. Seoul, Korea. https://www.aclweb.org/anthology/Y16-2002/
+
+For more details, see <https://sites.google.com/site/koreanparalleldata/> and <https://github.com/jungyeul/korean-parallel-corpora>.
 """
 
-# TODO(korean_parallel_corpora): BibTeX citation
 _CITATION = """
 @inproceedings{park-etal-2017-building,
     title = "Building a Better Bitext for Structurally Different Languages through Self-training",
@@ -26,6 +27,10 @@ _CITATION = """
     pages = "1--10",
     abstract = "We propose a novel method to bootstrap the construction of parallel corpora for new pairs of structurally different languages. We do so by combining the use of a pivot language and self-training. A pivot language enables the use of existing translation models to bootstrap the alignment and a self-training procedure enables to achieve better alignment, both at the document and sentence level. We also propose several evaluation methods for the resulting alignment.",
 }
+"""
+
+_LICENSE = """
+Korean Parallel corpora are made available under the terms of the Creative Commons Attribution Noncommercial No-Derivative-Works 3.0 US License.
 """
 
 VERSION = tfds.core.Version("1.0.0")
@@ -82,6 +87,7 @@ class KoreanParallelCorpora(tfds.core.GeneratorBasedBuilder):
             supervised_keys=None,
             homepage="https://github.com/jungyeul/korean-parallel-corpora",
             citation=_CITATION,
+            redistribution_info={"license": _LICENSE},
         )
 
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):

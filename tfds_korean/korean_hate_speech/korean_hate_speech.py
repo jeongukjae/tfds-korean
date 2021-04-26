@@ -16,7 +16,7 @@ Class mappings:
 * `hate`: `0`) `none`, `1`) `hate`, `2`) `offensive`
 
 For more details, see <https://github.com/kocohub/korean-hate-speech>.
-Check license at <https://github.com/kocohub/korean-hate-speech/blob/master/LICENSE.md>.
+Check the license at <https://github.com/kocohub/korean-hate-speech/blob/master/LICENSE.md>.
 """
 
 _CITATION = """
