@@ -8,6 +8,14 @@ title: korean_chatbot_qa_data
 
 Chatbot_data_for_Korean v1.0
 
+인공데이터입니다.일부 이별과 관련된 질문에서 다음카페 "[사랑보다 아름다운 실연](http://cafe116.daum.net/_c21_/home?grpid=1bld)"에서 자주 나오는 이야기들을 참고하여 제작하였습니다.
+가령 "이별한 지 열흘(또는 100일) 되었어요"라는 질문에 챗봇이 위로한다는 취지로 답변을 작성하였습니다.
+
+챗봇 트레이닝용 문답 페어 11,876개
+일상다반서 0, 이별(부정) 1, 사랑(긍정) 2로 레이블링
+
+[라이선스 파일 링크](https://github.com/songys/Chatbot_data/blob/master/LICENSE)
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -57,7 +65,12 @@ Chatbot_data_for_Korean v1.0
 * Citation:
 
   ```text
-  
+  @misc{koreanchatbotqa18
+      title={Kmounlp NER},
+      author={Youngsook Song},
+      howpublished={https://github.com/songys/Chatbot_data},
+      year={2018}
+  }
   ```
 
 ## How to use this dataset
