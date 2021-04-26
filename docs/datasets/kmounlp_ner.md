@@ -46,21 +46,26 @@ title: kmounlp_ner
 
   | |lemma|named_entity|pos|recognized|text|tokens|
   |---|---|---|---|---|---|---|
-  |1|그리고<br>_<br>25<br>일<br>...|O<br>O<br>B-DAT<br>I-DAT<br>...|MAJ<br>_<br>SN<br>NNB<br>...|그리고 <25일:DAT> 현재까지 <4박:NOH><5일:NOH>을 먹고 자며 생활하고...|그리고 25일 현재까지 4박5일을 먹고 자며 생활하고 있다.|그리고<br>_<br>25<br>일<br>...|
-  |2|동부<br>_<br>선수<br>들<br>...|B-ORG<br>O<br>O<br>O<br>...|NNP<br>_<br>NNG<br>XSN<br>...|<동부:ORG> 선수들은 <3차:NOH>전 패배 후 “욕심을 버리고 평상시 플레이를 ...|동부 선수들은 3차전 패배 후 “욕심을 버리고 평상시 플레이를 하라”는 전창진 감독의...|동부<br>_<br>선수<br>들<br>...|
-  |3|윤<br>_<br>장관<br>은<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNG<br>JX<br>...|<윤:PER> 장관은 "미세먼지 대책에 평점을 준다면 몇 점을 주겠느냐"는 또 다른 ...|윤 장관은 "미세먼지 대책에 평점을 준다면 몇 점을 주겠느냐"는 또 다른 질문에 대해...|윤<br>_<br>장관<br>은<br>...|
-  |4|그렇<br>었<br>던<br>_<br>...|O<br>O<br>O<br>O<br>...|VA<br>EP<br>ETM<br>_<br>...|그랬던 그가 ‘<비박:ORG>’ ‘<탈박:ORG>’의 대표 인사로 분류되니 실감이 안...|그랬던 그가 ‘비박’ ‘탈박’의 대표 인사로 분류되니 실감이 안 날 수밖에. 이번 인...|그<br>랬<br>던<br>_<br>...|
-  |5|영화<br>_<br>감독<br>_<br>...|O<br>O<br>O<br>O<br>...|NNG<br>_<br>NNG<br>_<br>...|영화 감독 <장예모:PER>가 개막식의 총 연출을 맡은 개막식은 <8시:TIM>부터 ...|영화 감독 장예모가 개막식의 총 연출을 맡은 개막식은 8시부터 3시간 반 동안 진행되...|영화<br>_<br>감독<br>_<br>...|
-  |6|동부<br>_<br>김주성<br>은<br>...|B-ORG<br>O<br>B-PER<br>O<br>...|NNP<br>_<br>NNP<br>JX<br>...|<동부:ORG> <김주성:PER>은 <9일:DAT> <안양실내체육관:LOC>에서 열린...|동부 김주성은 9일 안양실내체육관에서 열린 07~08 SK텔레콤 T 프로농구 4강 플...|동부<br>_<br>김주성<br>은<br>...|
-  |7|브레댄코<br>_<br>베이커리<br>창업<br>...|B-PER<br>O<br>O<br>O<br>...|NNG<br>_<br>NNG<br>NNG<br>...|<브레댄코:PER> 베이커리창업 및 특수상권 개발 문의는 전화(<02-532-6419...|브레댄코 베이커리창업 및 특수상권 개발 문의는 전화(02-532-6419)로 확인할 ...|브레댄코<br>_<br>베이커리<br>창업<br>...|
-  |8|한국공항공사<br>_<br>청주<br>지사<br>...|B-ORG<br>I-ORG<br>I-ORG<br>I-ORG<br>...|NNP<br>_<br>NNP<br>NNG<br>...|<한국공항공사 청주지사:ORG> 측은 이 같은 <청주공항:ORG>의 성장 배경을 △<...|한국공항공사 청주지사 측은 이 같은 청주공항의 성장 배경을 △2008년 시작된 24시...|한국공항공사<br>_<br>청주<br>지사<br>...|
-  |9|●<br>왜<br>_<br>호나우두<br>...|O<br>O<br>O<br>B-PER<br>...|SW<br>MAG<br>_<br>NNP<br>...|●왜 <호나우두:PER>는 세계 최고인가 ?|●왜 호나우두는 세계 최고인가 ?|●<br>왜<br>_<br>호나우두<br>...|
-  |10|북한<br>이<br>_<br>열병식<br>...|B-ORG<br>O<br>O<br>O<br>...|NNP<br>JKS<br>_<br>NNG<br>...|<북한:ORG>이 열병식에 전략무기들을 총동원한 것은 <도널드 트럼프:PER> <미국...|북한이 열병식에 전략무기들을 총동원한 것은 도널드 트럼프 미국 행정부의 거세지는 대북...|북한<br>이<br>_<br>열병식<br>...|
+  |1|김건희<br>_<br>교원<br>_<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNG<br>_<br>...|<김건희:PER> 교원 대리는 “전용 태블릿PC를 사용해 아이들이 ‘딴짓’ 없이 집중...|김건희 교원 대리는 “전용 태블릿PC를 사용해 아이들이 ‘딴짓’ 없이 집중할 수 있어...|김건희<br>_<br>교원<br>_<br>...|
+  |2|저수지<br>_<br>주변<br>으로<br>...|O<br>O<br>O<br>O<br>...|NNG<br>_<br>NNG<br>JKB<br>...|저수지 주변으로 <1km:NOH>가량 <제주올레 13코스:LOC>가 지난다.|저수지 주변으로 1km가량 제주올레 13코스가 지난다.|저수지<br>_<br>주변<br>으로<br>...|
+  |3|파머<br>는<br>_<br>원칙적<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>JX<br>_<br>NNG<br>...|<파머:PER>는 원칙적으로 <윌리엄스:PER>의 생각에 동의했다 .|파머는 원칙적으로 윌리엄스의 생각에 동의했다 .|파머<br>는<br>_<br>원칙적<br>...|
+  |4|성완종<br>_<br>리스트<br>_<br>...|B-POH<br>I-POH<br>I-POH<br>O<br>...|NNP<br>_<br>NNG<br>_<br>...|<성완종 리스트:POH> 파문이 불거지자 선거전략을 바꾼 것이다.|성완종 리스트 파문이 불거지자 선거전략을 바꾼 것이다.|성완종<br>_<br>리스트<br>_<br>...|
+  |5|신<br>_<br>씨<br>는<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNB<br>JX<br>...|<신:PER> 씨는 그때 현금 <5000만 원:MNY>을 갖고 있었지만 파워보트는 시...|신 씨는 그때 현금 5000만 원을 갖고 있었지만 파워보트는 시가 1억 원 정도였다.|신<br>_<br>씨<br>는<br>...|
+  |6|30<br>여<br>평<br>_<br>...|B-NOH<br>I-NOH<br>I-NOH<br>O<br>...|SN<br>XSN<br>NNB<br>_<br>...|<30여평:NOH> 크기의 아담한 사무실에 직원은 사장까지 합쳐 <11명:NOH>밖에...|30여평 크기의 아담한 사무실에 직원은 사장까지 합쳐 11명밖에 안된다.|30<br>여<br>평<br>_<br>...|
+  |7|그<br>는<br>_<br>SBS<br>...|O<br>O<br>O<br>B-ORG<br>...|NP<br>JX<br>_<br>SL<br>...|그는 <SBS:ORG> 예능 ‘<동상이몽:POH>’에 <유재석:PER> 보조 MC로 ...|그는 SBS 예능 ‘동상이몽’에 유재석 보조 MC로 출연해 탁월한 진행능력과 끼를 드...|그<br>는<br>_<br>SBS<br>...|
+  |8|강<br>_<br>씨<br>는<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNB<br>JX<br>...|<강:PER> 씨는 “아무리 가상공간이라고 하지만 도를 넘어선 언어 성희롱이 판친다”...|강 씨는 “아무리 가상공간이라고 하지만 도를 넘어선 언어 성희롱이 판친다”며 “범죄인...|강<br>_<br>씨<br>는<br>...|
+  |9|최근<br>_<br>손예진<br>의<br>...|O<br>O<br>B-PER<br>O<br>...|NNG<br>_<br>NNP<br>JKG<br>...|최근 <손예진:PER>의 ‘<비밀은 없다:POH>’와 <김혜수:PER>의 ‘<굿바이 ...|최근 손예진의 ‘비밀은 없다’와 김혜수의 ‘굿바이 싱글’이 연이어 개봉해 여배우의 활...|최근<br>_<br>손예진<br>의<br>...|
+  |10|경륜<br>훈련원<br>_<br>MTB<br>...|O<br>O<br>O<br>O<br>...|NNG<br>NNG<br>_<br>SL<br>...|경륜훈련원 MTB코스는 국내 최초 MTB 전용코스로 <한국산악자전거연맹:ORG> 공인...|경륜훈련원 MTB코스는 국내 최초 MTB 전용코스로 한국산악자전거연맹 공인 1등급 코스다.|경륜<br>훈련원<br>_<br>MTB<br>...|
 
 * Citation:
 
   ```text
-  
+  @misc{
+      title={Kmounlp NER},
+      author={Min-Ah Cheon and Jae-Hoon Kim},
+      howpublished={https://github.com/kmounlp/NER},
+      year={2019}
+  }
   ```
 
 ## How to use this dataset
