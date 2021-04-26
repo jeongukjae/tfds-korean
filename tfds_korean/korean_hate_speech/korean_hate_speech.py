@@ -9,6 +9,14 @@ import tensorflow_datasets as tfds
 _DESCRIPTION = """
 The human-annotated Korean corpus for toxic speech detection and the large unlabeled corpus.
 The data is comments from the Korean entertainment news aggregation platform.
+
+Class mappings:
+* `contain_gender_bias`: `0`) `False`, `1`) `True`
+* `bias`: `0`) `none`, `1`) `gender`, `2`) `others`
+* `hate`: `0`) `none`, `1`) `hate`, `2`) `offensive`
+
+For more details, see <https://github.com/kocohub/korean-hate-speech>.
+Check license at <https://github.com/kocohub/korean-hate-speech/blob/master/LICENSE.md>.
 """
 
 _CITATION = """
@@ -26,6 +34,10 @@ _CITATION = """
     pages = "25--31",
     abstract = "Toxic comments in online platforms are an unavoidable social issue under the cloak of anonymity. Hate speech detection has been actively done for languages such as English, German, or Italian, where manually labeled corpus has been released. In this work, we first present 9.4K manually labeled entertainment news comments for identifying Korean toxic speech, collected from a widely used online news platform in Korea. The comments are annotated regarding social bias and hate speech since both aspects are correlated. The inter-annotator agreement Krippendorff{'}s alpha score is 0.492 and 0.496, respectively. We provide benchmarks using CharCNN, BiLSTM, and BERT, where BERT achieves the highest score on all tasks. The models generally display better performance on bias identification, since the hate speech detection is a more subjective issue. Additionally, when BERT is trained with bias label for hate speech detection, the prediction score increases, implying that bias and hate are intertwined. We make our dataset publicly available and open competitions with the corpus and benchmarks.",
 }
+"""
+
+_LICENSE = """
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 """
 
 VERSION = tfds.core.Version("1.0.0")
