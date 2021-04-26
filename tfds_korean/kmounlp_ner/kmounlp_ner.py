@@ -7,6 +7,8 @@ import tensorflow_datasets as tfds
 
 _DESCRIPTION = """
 한국어 개체명 정의 및 표지 표준화 기술보고서와 이를 기반으로 제작된 개체명 형태소 말뭉치
+
+[라이선스 파일 링크](https://github.com/kmounlp/NER/blob/master/LICENSE)
 """
 
 _CITATION = """
