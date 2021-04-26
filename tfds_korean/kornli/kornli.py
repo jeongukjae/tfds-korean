@@ -3,6 +3,9 @@ import tensorflow_datasets as tfds
 
 _DESCRIPTION = """
 The dataset for the paper [_KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding_](https://arxiv.org/abs/2004.03289).
+
+For more details, see <https://github.com/kakaobrain/KorNLUDatasets>.
+This work is licensed under the [Creative Commons Attribution-ShareAlike license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
 """
 
 _CITATION = """
@@ -12,6 +15,10 @@ _CITATION = """
     journal={arXiv preprint arXiv:2004.03289},
     year={2020}
 }
+"""
+
+_LICENSE = """
+[Creative Commons Attribution-ShareAlike license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
 """
 
 
@@ -37,6 +44,7 @@ class Kornli(tfds.core.GeneratorBasedBuilder):
             supervised_keys=None,
             homepage="https://github.com/kakaobrain/KorNLUDatasets",
             citation=_CITATION,
+            redistribution_info={"license": _LICENSE},
         )
 
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):
