@@ -33,6 +33,7 @@ title: Dataset Catalog
 * [korean_parallel_corpora](./datasets/korean_parallel_corpora.html)
 * [kornli](./datasets/kornli.html)
 * [korsts](./datasets/korsts.html)
+* [kowikitext](./datasets/kowikitext.html)
 * [namuwikitext](./datasets/namuwikitext.html)
 * [nlp_challenge](./datasets/nlp_challenge.html)
 * [nsmc](./datasets/nsmc.html)
