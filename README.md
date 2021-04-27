@@ -2,7 +2,7 @@
 
 A collection of Korean Text Datasets ready to use using Tensorflow-Datasets.
 
-[**documentation**](https://jeongukjae.github.io/tfds-korean) | [**pypi**](https://pypi.org/project/tfds-korean/)
+[**Dataset Catalog**](https://jeongukjae.github.io/tfds-korean) | [**pypi**](https://pypi.org/project/tfds-korean/)
 
 ![PyPI - License](https://img.shields.io/pypi/l/tfds-korean)
 ![PyPI](https://img.shields.io/pypi/v/tfds-korean)
