@@ -8,6 +8,9 @@ title: korsts
 
 The dataset for the paper [_KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding_](https://arxiv.org/abs/2004.03289).
 
+For more details, see <https://github.com/kakaobrain/KorNLUDatasets>.
+This work is licensed under the [Creative Commons Attribution-ShareAlike license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -86,3 +89,7 @@ The dataset for the paper [_KorNLI and KorSTS: New Benchmark Datasets for Korean
 
   dataset = tfds.load("korsts")
   ```
+
+## License
+
+[Creative Commons Attribution-ShareAlike license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)

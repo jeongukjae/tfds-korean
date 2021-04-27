@@ -81,6 +81,7 @@ def main():
                         supervised_keys=str(builder.info.supervised_keys),
                         splits=list(builder.info.splits.items()),
                         citation=str(builder.info.citation),
+                        license=str(builder.info.redistribution_info.license),
                         examples={"columns": ds_df.columns, "rows": decoded_ds_df_values},
                     ),
                     file=f,
@@ -89,6 +90,7 @@ def main():
 
             continue
 
+        # build multi-config dataset catalog page
         default_infos = dict(
             name=str(builder.info.name),
             description=str(builder.info.description),
@@ -97,6 +99,7 @@ def main():
             release_notes=list(builder.release_notes.items()),
             citation=str(builder.info.citation),
             default_config=str(builder.BUILDER_CONFIGS[0].name),
+            license=str(builder.info.redistribution_info.license),
         )
         config_infos = []
         for config in builder.BUILDER_CONFIGS:

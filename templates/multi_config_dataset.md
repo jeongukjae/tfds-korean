@@ -64,3 +64,7 @@ title: {{ name }}
   ```
 
 {% endfor %}
+
+## License
+
+{{ license | safe }}

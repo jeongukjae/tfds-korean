@@ -60,7 +60,12 @@ The dataset construction is based on the method noted in [Large movie review dat
 * Citation:
 
   ```text
-  
+  @misc{nsmc16
+      title={Naver Sentiment Movie Corpus},
+      author={Lucy Park},
+      howpublished={https://github.com/e9t/nsmc},
+      year={2016}
+  }
   ```
 
 ## How to use this dataset
@@ -79,3 +84,7 @@ The dataset construction is based on the method noted in [Large movie review dat
 
   dataset = tfds.load("nsmc")
   ```
+
+## License
+
+[CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)

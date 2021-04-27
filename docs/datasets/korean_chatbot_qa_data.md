@@ -14,7 +14,8 @@ Chatbot_data_for_Korean v1.0
 챗봇 트레이닝용 문답 페어 11,876개
 일상다반서 0, 이별(부정) 1, 사랑(긍정) 2로 레이블링
 
-[라이선스 파일 링크](https://github.com/songys/Chatbot_data/blob/master/LICENSE)
+자세한 정보는 <https://github.com/songys/Chatbot_data>를 참고하세요.
+라이선스는 <https://github.com/songys/Chatbot_data/blob/master/LICENSE>에서 확인하실 수 있습니다.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -66,7 +67,7 @@ Chatbot_data_for_Korean v1.0
 
   ```text
   @misc{koreanchatbotqa18
-      title={Kmounlp NER},
+      title={Chatbot data for Korean},
       author={Youngsook Song},
       howpublished={https://github.com/songys/Chatbot_data},
       year={2018}
@@ -89,3 +90,7 @@ Chatbot_data_for_Korean v1.0
 
   dataset = tfds.load("korean_chatbot_qa_data")
   ```
+
+## License
+
+MIT License

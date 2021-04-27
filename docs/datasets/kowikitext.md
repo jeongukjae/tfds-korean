@@ -60,7 +60,12 @@ Wikitext format Korean corpus
 * Citation:
 
   ```text
-  
+  @misc{kowikitext20
+      title={Ko-wikitext},
+      author={Hyunjoong Kim},
+      howpublished={https://github.com/lovit/kowikitext},
+      year={2020}
+  }
   ```
 
 ## How to use this dataset
@@ -79,3 +84,7 @@ Wikitext format Korean corpus
 
   dataset = tfds.load("kowikitext")
   ```
+
+## License
+
+[CC-BY-SA 3.0](https://www.creativecommons.org/licenses/by-sa/3.0/) which [kowiki](https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A0%80%EC%9E%91%EA%B6%8C) dump dataset is licensed

@@ -10,6 +10,8 @@ Korean Parallel corpora (of https://sites.google.com/site/koreanparalleldata/)
 
 Jungyeul Park, Jeen-Pyo Hong and Jeong-Won Cha (2016) Korean Language Resources for Everyone. In Proceedings of the 30th Pacific Asia Conference on Language, Information and Computation (PACLIC 30). October 28 - 30, 2016. Seoul, Korea. https://www.aclweb.org/anthology/Y16-2002/
 
+For more details, see <https://sites.google.com/site/koreanparalleldata/> and <https://github.com/jungyeul/korean-parallel-corpora>.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -285,3 +287,7 @@ None
   ```
 
 
+
+## License
+
+Korean Parallel corpora are made available under the terms of the Creative Commons Attribution Noncommercial No-Derivative-Works 3.0 US License.

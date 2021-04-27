@@ -9,6 +9,14 @@ title: korean_hate_speech
 The human-annotated Korean corpus for toxic speech detection and the large unlabeled corpus.
 The data is comments from the Korean entertainment news aggregation platform.
 
+Class mappings:
+* `contain_gender_bias`: `0`) `False`, `1`) `True`
+* `bias`: `0`) `none`, `1`) `gender`, `2`) `others`
+* `hate`: `0`) `none`, `1`) `hate`, `2`) `offensive`
+
+For more details, see <https://github.com/kocohub/korean-hate-speech>.
+Check the license at <https://github.com/kocohub/korean-hate-speech/blob/master/LICENSE.md>.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -139,5 +147,9 @@ Korean hate speech dataset (unlabeled)
 
   dataset = tfds.load("korean_hate_speech/unlabeled")
   ```
+
+
+
+## License
 
 

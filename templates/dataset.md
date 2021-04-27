@@ -63,3 +63,7 @@ title: {{ name }}
 
   dataset = tfds.load("{{ name }}")
   ```
+
+## License
+
+{{ license | safe }}

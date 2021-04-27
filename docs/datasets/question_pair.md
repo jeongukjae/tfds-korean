@@ -9,6 +9,8 @@ title: question_pair
 짝 지어진 두 개의 질문이 같은 질문인지 다른 질문인지 핸드 레이블을 달아둔 데이터.
 사랑, 이별, 또는 일상과 같은 주제로 도메인 특정적이지 않음.
 
+라이선스는 <https://github.com/songys/Question_pair/blob/master/LICENSE>에서 확인하실 수 있습니다.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -60,7 +62,12 @@ title: question_pair
 * Citation:
 
   ```text
-  
+  @misc{questionpair20
+      title={Paired Question},
+      author={Youngsook Song},
+      howpublished={https://github.com/songys/Question_pair},
+      year={2020}
+  }
   ```
 
 ## How to use this dataset
@@ -79,3 +86,7 @@ title: question_pair
 
   dataset = tfds.load("question_pair")
   ```
+
+## License
+
+The MIT License (MIT)
