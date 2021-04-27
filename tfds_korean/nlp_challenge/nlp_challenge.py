@@ -3,7 +3,9 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 
 _DESCRIPTION = """
-네이버, 창원대가 함께하는 NLP Challenge 기술 대회의 NER/SRL 데이터
+네이버, 창원대가 함께하는 NLP Challenge 기술 대회의 NER/SRL 데이터.
+
+자세한 정보는 <https://air.changwon.ac.kr/?page_id=14>와 <https://air.changwon.ac.kr/?page_id=10>를 참고하세요.
 """
 
 _CITATION = """
@@ -16,6 +18,10 @@ _CITATION = """
   howpublished = {\\url{https://github.com/naver/nlp-challenge}},
   commit = {a51654472e0da75cd37c6e73ffe583db78e68323}
 }
+"""
+
+_LICENSE = """
+> 제공되는 코퍼스는 Data.ly에서 제작한 것으로, 연구 및 리더보드를 위한 학습으로 사용 가능하며 상업적인 목적으로 사용될 수 없음을 알려드립니다. 추가문의가 필요한 경우 메일을 남겨주세요.
 """
 
 VERSION = tfds.core.Version("1.0.0")
@@ -55,6 +61,7 @@ class NlpChallenge(tfds.core.GeneratorBasedBuilder):
             supervised_keys=None,
             homepage="https://github.com/naver/nlp-challenge",
             citation=_CITATION,
+            redistribution_info={"license": _LICENSE},
         )
 
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):

@@ -13,7 +13,7 @@ _DESCRIPTION = """
 """
 
 _CITATION = """
-@misc{
+@misc{kmounlpner19
     title={Kmounlp NER},
     author={Min-Ah Cheon and Jae-Hoon Kim},
     howpublished={https://github.com/kmounlp/NER},

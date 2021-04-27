@@ -10,8 +10,17 @@ Wikitext format Korean corpus
 학습 및 평가를 위하여 위키페이지 별로 train (99%), dev (0.5%), test (0.5%) 로 나뉘어져있습니다.
 """
 
-# TODO(namuwikitext): BibTeX citation
 _CITATION = """
+@misc{namuwikitext20
+    title={Namuwikitext},
+    author={Hyunjoong Kim},
+    howpublished={https://github.com/lovit/namuwikitext},
+    year={2020}
+}
+"""
+
+_LICENSE = """
+["CC BY-NC-SA 2.0 KR](https://creativecommons.org/licenses/by-nc-sa/2.0/kr/") which [Namuwiki dump dataset](https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EB%8D%A4%ED%94%84) is licensed
 """
 
 
@@ -34,6 +43,7 @@ class Namuwikitext(tfds.core.GeneratorBasedBuilder):
             supervised_keys=None,
             homepage="https://github.com/lovit/namuwikitext",
             citation=_CITATION,
+            redistribution_info={"license": _LICENSE},
         )
 
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):

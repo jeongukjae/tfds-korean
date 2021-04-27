@@ -10,8 +10,17 @@ Wikitext format Korean corpus
 한국어 위키의 덤프 데이터를 바탕을 제작한 wikitext 형식의 텍스트 파일입니다.
 """
 
-# TODO(kowikitext): BibTeX citation
 _CITATION = """
+@misc{kowikitext20
+    title={Ko-wikitext},
+    author={Hyunjoong Kim},
+    howpublished={https://github.com/lovit/kowikitext},
+    year={2020}
+}
+"""
+
+_LICENSE = """
+[CC-BY-SA 3.0](https://www.creativecommons.org/licenses/by-sa/3.0/) which [kowiki](https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A0%80%EC%9E%91%EA%B6%8C) dump dataset is licensed
 """
 
 
@@ -36,6 +45,7 @@ class Kowikitext(tfds.core.GeneratorBasedBuilder):
             supervised_keys=None,
             homepage="https://github.com/lovit/kowikitext",
             citation=_CITATION,
+            redistribution_info={"license": _LICENSE},
         )
 
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):

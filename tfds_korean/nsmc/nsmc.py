@@ -11,8 +11,17 @@ This is a movie review dataset in the Korean language. Reviews were scraped from
 The dataset construction is based on the method noted in [Large movie review dataset](http://ai.stanford.edu/~amaas/data/sentiment/) from Maas et al., 2011.
 """
 
-# TODO(nsmc): BibTeX citation
 _CITATION = """
+@misc{nsmc16
+    title={Naver Sentiment Movie Corpus},
+    author={Lucy Park},
+    howpublished={https://github.com/e9t/nsmc},
+    year={2016}
+}
+"""
+
+_LICENSE = """
+[CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 """
 
 
@@ -33,6 +42,7 @@ class Nsmc(tfds.core.GeneratorBasedBuilder):
             supervised_keys=("document", "label"),
             homepage="https://github.com/e9t/nsmc",
             citation=_CITATION,
+            redistribution_info={"license": _LICENSE},
         )
 
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):

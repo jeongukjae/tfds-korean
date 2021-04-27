@@ -8,9 +8,9 @@ Parallel dataset of Korean Questions and Commands
 
 paper: https://www.aclweb.org/anthology/2020.lrec-1.842/
 
-* feature description
-    * topic. 0: Email, 1: Scheduling, 2: S. Home, 3: Weather
-    * act. 0: Alt. Q, 1. Wh- Q, 2: PH, 3: Str. REQ
+Class description (For more details, see paper)
+* `topic`: `0`) Email, `1`) Scheduling, `2`) S. Home, `3`) Weather
+* `act`: `0`) Alt. Q, `1`) Wh- Q, `2`) PH, `3`) Str. REQ
 """
 
 _CITATION = """

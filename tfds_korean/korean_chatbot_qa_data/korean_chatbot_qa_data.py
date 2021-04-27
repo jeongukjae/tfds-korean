@@ -18,7 +18,7 @@ Chatbot_data_for_Korean v1.0
 
 _CITATION = """
 @misc{koreanchatbotqa18
-    title={Kmounlp NER},
+    title={Chatbot data for Korean},
     author={Youngsook Song},
     howpublished={https://github.com/songys/Chatbot_data},
     year={2018}
