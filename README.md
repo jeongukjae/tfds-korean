@@ -1,7 +1,5 @@
 # tfds-korean
 
-<center>
-
 A collection of Korean Text Datasets ready to use using [Tensorflow-Datasets](https://github.com/tensorflow/datasets).
 
 [TensorFlow-Datasets](https://github.com/tensorflow/datasets)를 이용한 한국어/한글 데이터셋 모음입니다.
@@ -11,8 +9,6 @@ A collection of Korean Text Datasets ready to use using [Tensorflow-Datasets](ht
 ![PyPI - License](https://img.shields.io/pypi/l/tfds-korean)
 ![PyPI](https://img.shields.io/pypi/v/tfds-korean)
 [![Test Python](https://github.com/jeongukjae/tfds-korean/actions/workflows/test-python.yml/badge.svg)](https://github.com/jeongukjae/tfds-korean/actions/workflows/test-python.yml)
-
-</center>
 
 ## Usage
 
