@@ -94,3 +94,5 @@ Chatbot_data_for_Korean v1.0
 ## License
 
 MIT License
+
+<style> td {white-space: nowrap;} </style>

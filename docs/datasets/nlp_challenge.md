@@ -137,3 +137,5 @@ NLP Challenge SRL dataset
 ## License
 
 > 제공되는 코퍼스는 Data.ly에서 제작한 것으로, 연구 및 리더보드를 위한 학습으로 사용 가능하며 상업적인 목적으로 사용될 수 없음을 알려드립니다. 추가문의가 필요한 경우 메일을 남겨주세요.
+
+<style> td {white-space: nowrap;} </style>

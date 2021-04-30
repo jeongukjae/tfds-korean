@@ -291,3 +291,5 @@ None
 ## License
 
 Korean Parallel corpora are made available under the terms of the Creative Commons Attribution Noncommercial No-Derivative-Works 3.0 US License.
+
+<style> td {white-space: nowrap;} </style>

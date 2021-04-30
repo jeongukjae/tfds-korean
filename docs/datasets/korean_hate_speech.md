@@ -153,3 +153,5 @@ Korean hate speech dataset (unlabeled)
 ## License
 
 
+
+<style> td {white-space: nowrap;} </style>

@@ -90,3 +90,5 @@ title: question_pair
 ## License
 
 The MIT License (MIT)
+
+<style> td {white-space: nowrap;} </style>

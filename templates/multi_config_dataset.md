@@ -68,3 +68,5 @@ title: {{ name }}
 ## License
 
 {{ license | safe }}
+
+<style> td {white-space: nowrap;} </style>

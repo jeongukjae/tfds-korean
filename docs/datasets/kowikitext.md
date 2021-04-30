@@ -88,3 +88,5 @@ Wikitext format Korean corpus
 ## License
 
 [CC-BY-SA 3.0](https://www.creativecommons.org/licenses/by-sa/3.0/) which [kowiki](https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A0%80%EC%9E%91%EA%B6%8C) dump dataset is licensed
+
+<style> td {white-space: nowrap;} </style>

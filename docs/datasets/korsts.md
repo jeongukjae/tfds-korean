@@ -93,3 +93,5 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike license
 ## License
 
 [Creative Commons Attribution-ShareAlike license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+<style> td {white-space: nowrap;} </style>
