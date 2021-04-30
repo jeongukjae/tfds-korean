@@ -37,6 +37,8 @@ model.fit(train_ds)
 model.evaluate(test_ds)
 ```
 
+See [Dataset Catalog page](https://jeongukjae.github.io/tfds-korean) for dataset list and details of each dataset.
+
 ## Examples
 
 * [Loading NSMC dataset](./examples/nsmc_loading_datasets.ipynb)
