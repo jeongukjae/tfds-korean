@@ -1,0 +1,2 @@
+{"category": "Cat1", "begin": "2018-11-01", "end": "2018-12-01", "content": "Content1", "num_agree": 10, "petition_idx": "1234", "status": "청원종료", "title": "Title1"}
+{"category": "Cat2", "begin": "2018-11-01", "end": "2018-12-01", "content": "Content2", "num_agree": 3, "petition_idx": "12345", "status": "청원종료", "title": "Title2", "replies": []}
