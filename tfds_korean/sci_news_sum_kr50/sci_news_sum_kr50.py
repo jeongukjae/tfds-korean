@@ -4,7 +4,6 @@ import json
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
-
 _DESCRIPTION = """
 네이버 뉴스 중 IT/과학 분야에서 50개를 선정해서 요약에 해당하는 문장을 태깅해둔 데이터셋입니다.
 파일 한개당 뉴스 하나를 뜻하며, 원본 출처가 기록되어 있습니다. 비상업적인 실험에만 사용해주세요.
