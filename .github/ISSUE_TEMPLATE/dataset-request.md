@@ -10,9 +10,10 @@ assignees: ''
 ## Dataset Information
 
 * Dataset Name:
-* Prefered code name(e.g. `korean_chatbot_qa_data`): 
+* Prefered code name(e.g. `korean_chatbot_qa_data`):
 * Dataset description:
 * Homepage:
 * Citation:
+* License:
 
 ## Additional Context
