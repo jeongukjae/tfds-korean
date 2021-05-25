@@ -11,6 +11,9 @@ Wikitext format Korean corpus
 나무위키의 덤프 데이터를 바탕을 제작한 wikitext 형식의 텍스트 파일입니다.
 학습 및 평가를 위하여 위키페이지 별로 train (99%), dev (0.5%), test (0.5%) 로 나뉘어져있습니다.
 
+[lovit/namuwikitext#10](https://github.com/lovit/namuwikitext/issues/10)과 같은 이슈로 홈페이지에 적힌 수대로 train, dev, test가 나오지는 않습니다.
+또한 `content` 피쳐가 비어있는 값이 나올 가능성이 있으니 주의하여 사용하시길 바랍니다.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
