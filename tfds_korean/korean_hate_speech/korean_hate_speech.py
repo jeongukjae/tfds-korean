@@ -85,6 +85,7 @@ class KoreanHateSpeech(tfds.core.GeneratorBasedBuilder):
             supervised_keys=None,
             homepage="https://github.com/kocohub/korean-hate-speech",
             citation=_CITATION,
+            redistribution_info={"license": _LICENSE},
         )
 
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):
