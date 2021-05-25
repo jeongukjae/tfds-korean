@@ -1,0 +1,3 @@
+question1	command1	0
+question2	command2	1
+question3	command3	1

@@ -50,6 +50,7 @@ A collection of Korean Text Datasets ready to use using [Tensorflow-Datasets](ht
 * [para_kqc](./datasets/para_kqc.html)
 * [petitions_archive](./datasets/petitions_archive.html)
 * [question_pair](./datasets/question_pair.html)
+* [sae4k](./datasets/sae4k.html)
 * [sci_news_sum_kr50](./datasets/sci_news_sum_kr50.html)
 
 
