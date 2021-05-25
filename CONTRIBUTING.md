@@ -10,6 +10,8 @@
 2. 데이터셋 관련 코드 구현
 3. `tfds build tfds_korean/DATASET_NAME --register_checksums`
 
+데이터셋 문서 페이지는 직접 빌드하지 않으셔도 됩니다.
+
 ## 코드 스타일
 
 미리 세팅된 black, isort, flake8을 따라 코드 스타일을 맞추어 주시면 됩니다. 최신버전을 따라가는 것을 기본으로 하며, 아래 명령어로 확인합니다.
