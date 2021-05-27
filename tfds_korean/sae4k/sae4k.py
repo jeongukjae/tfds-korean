@@ -29,6 +29,7 @@ _CITATION = """
 """
 
 _LICENSE = """
+[This work is licensed under a CC-BY-SA-4.0 License.](https://github.com/warnikchow/sae4k/blob/master/LICENSE)
 """
 
 VERSION = tfds.core.Version("1.0.0")
