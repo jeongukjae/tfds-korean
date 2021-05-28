@@ -1,0 +1,29 @@
+## 레이블은 에시로 아무렇게나 달았어요
+## example-name-1	example sentence
+안	O
+녕	O
+하	O
+세	O
+요	O
+.	O
+
+## test-example-name-001	이런이런 문장이 여기에 와요
+이	I-LC
+런	B-LC
+이	O
+런	I-PS
+ 	B-PS
+문	I-PS
+장	B-PS
+이	O
+ 	O
+여	O
+기	O
+에	O
+ 	O
+와	O
+요	O
+
+## example-name-2	example sentence
+안	O
+녕	O

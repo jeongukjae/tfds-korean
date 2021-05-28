@@ -1,0 +1,8 @@
+## 레이블은 에시로 아무렇게나 달았어요
+## example-dev-name-2	example sentence
+이	O
+건	O
+ 	O
+d	O
+e	O
+v	O

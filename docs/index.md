@@ -37,6 +37,7 @@ A collection of Korean Text Datasets ready to use using [Tensorflow-Datasets](ht
 
 ## All datasets
 
+* [klue_ner](./datasets/klue_ner.html)
 * [kmounlp_ner](./datasets/kmounlp_ner.html)
 * [korean_chatbot_qa_data](./datasets/korean_chatbot_qa_data.html)
 * [korean_hate_speech](./datasets/korean_hate_speech.html)
