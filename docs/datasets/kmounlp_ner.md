@@ -49,16 +49,16 @@ title: kmounlp_ner
 
   | |lemma|named_entity|pos|recognized|text|tokens|
   |---|---|---|---|---|---|---|
-  |1|김건희<br>_<br>교원<br>_<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNG<br>_<br>...|<김건희:PER> 교원 대리는 “전용 태블릿PC를 사용해 아이들이 ‘딴짓’ 없이 집중...|김건희 교원 대리는 “전용 태블릿PC를 사용해 아이들이 ‘딴짓’ 없이 집중할 수 있어...|김건희<br>_<br>교원<br>_<br>...|
-  |2|저수지<br>_<br>주변<br>으로<br>...|O<br>O<br>O<br>O<br>...|NNG<br>_<br>NNG<br>JKB<br>...|저수지 주변으로 <1km:NOH>가량 <제주올레 13코스:LOC>가 지난다.|저수지 주변으로 1km가량 제주올레 13코스가 지난다.|저수지<br>_<br>주변<br>으로<br>...|
-  |3|파머<br>는<br>_<br>원칙적<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>JX<br>_<br>NNG<br>...|<파머:PER>는 원칙적으로 <윌리엄스:PER>의 생각에 동의했다 .|파머는 원칙적으로 윌리엄스의 생각에 동의했다 .|파머<br>는<br>_<br>원칙적<br>...|
-  |4|성완종<br>_<br>리스트<br>_<br>...|B-POH<br>I-POH<br>I-POH<br>O<br>...|NNP<br>_<br>NNG<br>_<br>...|<성완종 리스트:POH> 파문이 불거지자 선거전략을 바꾼 것이다.|성완종 리스트 파문이 불거지자 선거전략을 바꾼 것이다.|성완종<br>_<br>리스트<br>_<br>...|
-  |5|신<br>_<br>씨<br>는<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNB<br>JX<br>...|<신:PER> 씨는 그때 현금 <5000만 원:MNY>을 갖고 있었지만 파워보트는 시...|신 씨는 그때 현금 5000만 원을 갖고 있었지만 파워보트는 시가 1억 원 정도였다.|신<br>_<br>씨<br>는<br>...|
-  |6|30<br>여<br>평<br>_<br>...|B-NOH<br>I-NOH<br>I-NOH<br>O<br>...|SN<br>XSN<br>NNB<br>_<br>...|<30여평:NOH> 크기의 아담한 사무실에 직원은 사장까지 합쳐 <11명:NOH>밖에...|30여평 크기의 아담한 사무실에 직원은 사장까지 합쳐 11명밖에 안된다.|30<br>여<br>평<br>_<br>...|
-  |7|그<br>는<br>_<br>SBS<br>...|O<br>O<br>O<br>B-ORG<br>...|NP<br>JX<br>_<br>SL<br>...|그는 <SBS:ORG> 예능 ‘<동상이몽:POH>’에 <유재석:PER> 보조 MC로 ...|그는 SBS 예능 ‘동상이몽’에 유재석 보조 MC로 출연해 탁월한 진행능력과 끼를 드...|그<br>는<br>_<br>SBS<br>...|
-  |8|강<br>_<br>씨<br>는<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNB<br>JX<br>...|<강:PER> 씨는 “아무리 가상공간이라고 하지만 도를 넘어선 언어 성희롱이 판친다”...|강 씨는 “아무리 가상공간이라고 하지만 도를 넘어선 언어 성희롱이 판친다”며 “범죄인...|강<br>_<br>씨<br>는<br>...|
-  |9|최근<br>_<br>손예진<br>의<br>...|O<br>O<br>B-PER<br>O<br>...|NNG<br>_<br>NNP<br>JKG<br>...|최근 <손예진:PER>의 ‘<비밀은 없다:POH>’와 <김혜수:PER>의 ‘<굿바이 ...|최근 손예진의 ‘비밀은 없다’와 김혜수의 ‘굿바이 싱글’이 연이어 개봉해 여배우의 활...|최근<br>_<br>손예진<br>의<br>...|
-  |10|경륜<br>훈련원<br>_<br>MTB<br>...|O<br>O<br>O<br>O<br>...|NNG<br>NNG<br>_<br>SL<br>...|경륜훈련원 MTB코스는 국내 최초 MTB 전용코스로 <한국산악자전거연맹:ORG> 공인...|경륜훈련원 MTB코스는 국내 최초 MTB 전용코스로 한국산악자전거연맹 공인 1등급 코스다.|경륜<br>훈련원<br>_<br>MTB<br>...|
+  |1|김건희<br>_<br>교원<br>_<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNG<br>_<br>...|&lt;김건희:PER&gt; 교원 대리는 “전용 태블릿PC를 사용해 아이들이 ‘딴짓’...|김건희 교원 대리는 “전용 태블릿PC를 사용해 아이들이 ‘딴짓’ 없이 집중할 수 있어...|김건희<br>_<br>교원<br>_<br>...|
+  |2|저수지<br>_<br>주변<br>으로<br>...|O<br>O<br>O<br>O<br>...|NNG<br>_<br>NNG<br>JKB<br>...|저수지 주변으로 &lt;1km:NOH&gt;가량 &lt;제주올레 13코스:LOC&gt...|저수지 주변으로 1km가량 제주올레 13코스가 지난다.|저수지<br>_<br>주변<br>으로<br>...|
+  |3|파머<br>는<br>_<br>원칙적<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>JX<br>_<br>NNG<br>...|&lt;파머:PER&gt;는 원칙적으로 &lt;윌리엄스:PER&gt;의 생각에 동의했다 .|파머는 원칙적으로 윌리엄스의 생각에 동의했다 .|파머<br>는<br>_<br>원칙적<br>...|
+  |4|성완종<br>_<br>리스트<br>_<br>...|B-POH<br>I-POH<br>I-POH<br>O<br>...|NNP<br>_<br>NNG<br>_<br>...|&lt;성완종 리스트:POH&gt; 파문이 불거지자 선거전략을 바꾼 것이다.|성완종 리스트 파문이 불거지자 선거전략을 바꾼 것이다.|성완종<br>_<br>리스트<br>_<br>...|
+  |5|신<br>_<br>씨<br>는<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNB<br>JX<br>...|&lt;신:PER&gt; 씨는 그때 현금 &lt;5000만 원:MNY&gt;을 갖고 ...|신 씨는 그때 현금 5000만 원을 갖고 있었지만 파워보트는 시가 1억 원 정도였다.|신<br>_<br>씨<br>는<br>...|
+  |6|30<br>여<br>평<br>_<br>...|B-NOH<br>I-NOH<br>I-NOH<br>O<br>...|SN<br>XSN<br>NNB<br>_<br>...|&lt;30여평:NOH&gt; 크기의 아담한 사무실에 직원은 사장까지 합쳐 &lt;1...|30여평 크기의 아담한 사무실에 직원은 사장까지 합쳐 11명밖에 안된다.|30<br>여<br>평<br>_<br>...|
+  |7|그<br>는<br>_<br>SBS<br>...|O<br>O<br>O<br>B-ORG<br>...|NP<br>JX<br>_<br>SL<br>...|그는 &lt;SBS:ORG&gt; 예능 ‘&lt;동상이몽:POH&gt;’에 &lt;유...|그는 SBS 예능 ‘동상이몽’에 유재석 보조 MC로 출연해 탁월한 진행능력과 끼를 드...|그<br>는<br>_<br>SBS<br>...|
+  |8|강<br>_<br>씨<br>는<br>...|B-PER<br>O<br>O<br>O<br>...|NNP<br>_<br>NNB<br>JX<br>...|&lt;강:PER&gt; 씨는 “아무리 가상공간이라고 하지만 도를 넘어선 언어 성희롱...|강 씨는 “아무리 가상공간이라고 하지만 도를 넘어선 언어 성희롱이 판친다”며 “범죄인...|강<br>_<br>씨<br>는<br>...|
+  |9|최근<br>_<br>손예진<br>의<br>...|O<br>O<br>B-PER<br>O<br>...|NNG<br>_<br>NNP<br>JKG<br>...|최근 &lt;손예진:PER&gt;의 ‘&lt;비밀은 없다:POH&gt;’와 &lt;김...|최근 손예진의 ‘비밀은 없다’와 김혜수의 ‘굿바이 싱글’이 연이어 개봉해 여배우의 활...|최근<br>_<br>손예진<br>의<br>...|
+  |10|경륜<br>훈련원<br>_<br>MTB<br>...|O<br>O<br>O<br>O<br>...|NNG<br>NNG<br>_<br>SL<br>...|경륜훈련원 MTB코스는 국내 최초 MTB 전용코스로 &lt;한국산악자전거연맹:ORG&...|경륜훈련원 MTB코스는 국내 최초 MTB 전용코스로 한국산악자전거연맹 공인 1등급 코스다.|경륜<br>훈련원<br>_<br>MTB<br>...|
 
 * Citation:
 

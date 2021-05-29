@@ -39,7 +39,7 @@ title: {{ name }}
 
   | |{%for col in examples['columns'] %}{{col}}|{% endfor %}
   |---|{%for col in examples['columns'] %}---|{% endfor %}{% for row in examples['rows'] %}
-  |{{loop.index}}|{% for cell in row %}{{cell}}|{% endfor %}{% endfor %}
+  |{{loop.index}}|{% for cell in row %}{{cell | safe}}|{% endfor %}{% endfor %}
 
 * Citation:
 

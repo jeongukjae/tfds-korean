@@ -51,7 +51,7 @@ title: {{ name }}
 
   | |{%for col in config.examples['columns'] %}{{col}}|{% endfor %}
   |---|{%for col in config.examples['columns'] %}---|{% endfor %}{% for row in config.examples['rows'] %}
-  |{{loop.index}}|{% for cell in row %}{{cell}}|{% endfor %}{% endfor %}
+  |{{loop.index}}|{% for cell in row %}{{cell | safe}}|{% endfor %}{% endfor %}
 
 * Use this dataset
 

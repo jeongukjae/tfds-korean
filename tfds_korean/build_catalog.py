@@ -135,7 +135,7 @@ def _decode_df_values(df_values):
 
 def _decode_cell(cell):
     if isinstance(cell, bytes):
-        value = cell.decode("utf8").strip().replace("\n", "<br>")
+        value = cell.decode("utf8").strip().replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br>")
         if len(value) > 50:
             value = value[:47] + "..."
         return value
