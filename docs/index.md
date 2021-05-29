@@ -43,6 +43,7 @@ A collection of Korean Text Datasets ready to use using [Tensorflow-Datasets](ht
 * [korean_hate_speech](./datasets/korean_hate_speech.html)
 * [korean_parallel_corpora](./datasets/korean_parallel_corpora.html)
 * [kornli](./datasets/kornli.html)
+* [korquad](./datasets/korquad.html)
 * [korsts](./datasets/korsts.html)
 * [kowikitext](./datasets/kowikitext.html)
 * [namuwikitext](./datasets/namuwikitext.html)
