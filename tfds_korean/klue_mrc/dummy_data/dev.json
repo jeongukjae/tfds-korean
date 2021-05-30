@@ -1,0 +1,29 @@
+{
+  "version": "klue-mrc-v1",
+  "data": [
+    {
+      "title": "tfds-dataset, 끝도 없는 성장세 기록",
+      "paragraphs": [
+        {
+          "context": "tfds-dataset이 수 많은 Star를 기록하며 끝도 없이 성장 중인 것으로 밝혀졌다. 코드 공유 플랫폼 Github에 호스팅 중인 tfds-dataset은 앞으로도 더욱 많은 데이터셋을 추가하며 확장할 계획이다.",
+          "qas": [
+            {
+              "question": "tfds-dataset이 호스팅되고 있는 플랫폼의 이름은?",
+              "answers": [
+                {
+                  "text": "Github",
+                  "answer_start": 63
+                }
+              ],
+              "question_type": 1,
+              "is_impossible": false,
+              "guid": "klue-mrc-v1_dev_test_00001"
+            }
+          ]
+        }
+      ],
+      "news_category": "Custom Category",
+      "source": "Custom Source"
+    }
+  ]
+}

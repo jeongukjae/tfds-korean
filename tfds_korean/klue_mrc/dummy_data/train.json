@@ -1,0 +1,82 @@
+{
+    "version": "klue-mrc-v1",
+    "data": [
+        {
+            "title": "tfds-dataset, 끝도 없는 성장세 기록",
+            "paragraphs": [
+                {
+                    "context": "tfds-dataset이 수 많은 Star를 기록하며 끝도 없이 성장 중인 것으로 밝혀졌다. 코드 공유 플랫폼 Github에 호스팅 중인 tfds-dataset은 앞으로도 더욱 많은 데이터셋을 추가하며 확장할 계획이다.",
+                    "qas": [
+                        {
+                            "question": "tfds-dataset이 호스팅되고 있는 플랫폼의 이름은?",
+                            "answers": [
+                                {
+                                    "text": "Github",
+                                    "answer_start": 63
+                                }
+                            ],
+                            "question_type": 1,
+                            "is_impossible": false,
+                            "guid": "klue-mrc-v1_train_test_00001"
+                        }
+                    ]
+                }
+            ],
+            "news_category": "Custom Category",
+            "source": "Custom Source"
+        },
+        {
+            "title": "1번 제목",
+            "paragraphs": [
+                {
+                    "context": "1번 제목의 컨텍스트가 여기에 있다고 한다.",
+                    "qas": [
+                        {
+                            "question": "컨텍스트는 몇 번째 제목인가?",
+                            "answers": [
+                                {
+                                    "text": "1",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "question_type": 2,
+                            "is_impossible": false,
+                            "guid": "klue-mrc-v1_train_test_00002"
+                        }
+                    ]
+                }
+            ],
+            "news_category": "Sample Category",
+            "source": "Custom Source"
+        },
+        {
+            "title": "3번 제목",
+            "paragraphs": [
+                {
+                    "context": "이 Repository는 대단하다. 모든 한국어 데이터셋을 가졌기 때문이다. TFDS 플랫폼에 의해서 모든 데이터를 읽어들일 수 있고, KLUE 데이터셋 역시 여기에서 읽을 수 있다.",
+                    "qas": [
+                        {
+                            "question": "KLUE 데이터셋을 구성하는 언어는?",
+                            "answers": [],
+                            "plausible_answers": [
+                                {
+                                    "text": "한국어",
+                                    "answer_start": 23
+                                },
+                                {
+                                    "text": "한국어 데이터셋",
+                                    "answer_start": 23
+                                }
+                            ],
+                            "question_type": 3,
+                            "is_impossible": true,
+                            "guid": "klue-mrc-v1_train_test_00003"
+                        }
+                    ]
+                }
+            ],
+            "news_category": "Custom Category",
+            "source": "Custom Source"
+        }
+    ]
+}
