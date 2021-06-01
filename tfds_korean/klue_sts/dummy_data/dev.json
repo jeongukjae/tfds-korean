@@ -1,0 +1,14 @@
+[
+    {
+        "guid": "sts_dev_00000",
+        "source": "source1",
+        "sentence1": "문장1",
+        "sentence2": "문장2",
+        "labels": {
+            "label": 0.2,
+            "real-label": 0.2,
+            "binary-label": 0
+        },
+        "annotations": {}
+    }
+]

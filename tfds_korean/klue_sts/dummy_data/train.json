@@ -1,0 +1,38 @@
+[
+    {
+        "guid": "sts_train_00000",
+        "source": "source1",
+        "sentence1": "train 1234",
+        "sentence2": "train pair 12312",
+        "labels": {
+            "label": 0.6,
+            "real-label": 0.6,
+            "binary-label": 0
+        },
+        "annotations": {}
+    },
+    {
+        "guid": "sts_train_00001",
+        "source": "source1123",
+        "sentence1": "train 2",
+        "sentence2": "train pair 2",
+        "labels": {
+            "label": 3.7,
+            "real-label": 3.7126,
+            "binary-label": 1
+        },
+        "annotations": {}
+    },
+    {
+        "guid": "sts_train_00002",
+        "source": "source1",
+        "sentence1": "문장 문장 문장",
+        "sentence2": "문장 문장 문장 문장?",
+        "labels": {
+            "label": 4.7,
+            "real-label": 4.6789,
+            "binary-label": 1
+        },
+        "annotations": {}
+    }
+]
