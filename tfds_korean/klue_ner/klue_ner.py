@@ -3,7 +3,8 @@
 import tensorflow_datasets as tfds
 
 _DESCRIPTION = """
-Named Entity Recognition(NER) task of KLUE benchmark.
+KLUE benchmark - Named Entity Recognition(NER) task.
+
 For more details, see [KLUE Benchmark - NER Task - Overview description](https://klue-benchmark.com/tasks/69/overview/description)
 """
 
