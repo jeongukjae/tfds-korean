@@ -1,0 +1,8 @@
+[
+    {
+        "guid": "dev-00000",
+        "premise": "문장1",
+        "hypothesis": "문장2",
+        "gold_label": "entailment"
+    }
+]

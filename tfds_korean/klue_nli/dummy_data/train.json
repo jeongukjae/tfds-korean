@@ -1,0 +1,20 @@
+[
+    {
+        "guid": "train-00000",
+        "premise": "train 문장1",
+        "hypothesis": "train 문장2",
+        "gold_label": "entailment"
+    },
+    {
+        "guid": "train-00001",
+        "premise": "train 문장1",
+        "hypothesis": "train 문장3",
+        "gold_label": "contradiction"
+    },
+    {
+        "guid": "train-00002",
+        "premise": "train 문장1",
+        "hypothesis": "train 문장4",
+        "gold_label": "neutral"
+    }
+]
