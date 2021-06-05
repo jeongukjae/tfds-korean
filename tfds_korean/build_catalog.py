@@ -53,7 +53,7 @@ def main():
     with open(os.path.join(args.catalog_output, "index.md"), "w", encoding="utf8") as f:
         print(index_template.render(version=__version__, dataset_names=dataset_pkgs), file=f)
 
-    ds_read_config = tfds.ReadConfig(skip_prefetch=True)
+    ds_read_config = tfds.ReadConfig(skip_prefetch=True, try_autocache=False)
     logging.info("Render dataset catalogs")
     for pkg in dataset_pkgs:
         logging.info(f"Render dataset {pkg}")
@@ -62,72 +62,102 @@ def main():
         builder = tfds.builder(pkg)
 
         if len(builder.BUILDER_CONFIGS) == 0:
-            builder.download_and_prepare()
-            with open(os.path.join(dataset_doc_path, f"{pkg}.md"), "w", encoding="utf8") as f:
-                split_key = list(builder.info.splits.keys())[0]
-                builder_dataset = builder.as_dataset(split=split_key, read_config=ds_read_config).take(10)
-                ds_df = tfds.as_dataframe(builder_dataset, builder.info)
-                decoded_ds_df_values = _decode_df_values(ds_df.values)
-                logging.info("Saving...")
-                print(
-                    dataset_template.render(
-                        name=str(builder.info.name),
-                        version=str(builder.info.version),
-                        release_notes=list(builder.release_notes.items()),
-                        description=str(builder.info.description),
-                        homepage=str(builder.info.homepage),
-                        download_size=str(builder.info.download_size),
-                        dataset_size=str(builder.info.dataset_size),
-                        features=str(builder.info.features),
-                        supervised_keys=str(builder.info.supervised_keys),
-                        splits=list(builder.info.splits.items()),
-                        citation=str(builder.info.citation),
-                        license=str(builder.info.redistribution_info.license),
-                        examples={"columns": ds_df.columns, "rows": decoded_ds_df_values},
-                    ),
-                    file=f,
-                )
-                logging.info("Done")
-
-            continue
-
-        # build multi-config dataset catalog page
-        default_infos = dict(
-            name=str(builder.info.name),
-            description=str(builder.info.description),
-            homepage=str(builder.info.homepage),
-            version=str(builder.info.version),
-            release_notes=list(builder.release_notes.items()),
-            citation=str(builder.info.citation),
-            default_config=str(builder.BUILDER_CONFIGS[0].name),
-            license=str(builder.info.redistribution_info.license),
-        )
-        config_infos = []
-        for config in builder.BUILDER_CONFIGS:
-            builder = tfds.builder(f"{pkg}/{config.name}")
-            builder.download_and_prepare()
-
-            split_key = list(builder.info.splits.keys())[0]
-            builder_dataset = builder.as_dataset(split=split_key, read_config=ds_read_config).take(10)
-            ds_df = tfds.as_dataframe(builder_dataset, builder.info)
-            decoded_ds_df_values = _decode_df_values(ds_df.values)
-
-            config_infos.append(
-                dict(
-                    name=config.name,
-                    description=config.description,
-                    dataset_size=str(builder.info.dataset_size),
-                    download_size=str(builder.info.download_size),
-                    splits=list(builder.info.splits.items()),
-                    features=str(builder.info.features),
-                    examples={"columns": ds_df.columns, "rows": decoded_ds_df_values},
-                )
+            build_dataset_page(
+                builder=builder,
+                pkg=pkg,
+                ds_read_config=ds_read_config,
+                dataset_doc_path=dataset_doc_path,
+                template=dataset_template,
+            )
+        else:
+            # build multi-config dataset catalog page
+            build_multiconfig_dataset_page(
+                builder=builder,
+                pkg=pkg,
+                ds_read_config=ds_read_config,
+                dataset_doc_path=dataset_doc_path,
+                template=multi_config_dataset_template,
             )
 
-        with open(os.path.join(dataset_doc_path, f"{pkg}.md"), "w", encoding="utf8") as f:
-            logging.info("Saving...")
-            print(multi_config_dataset_template.render(**default_infos, configs=config_infos), file=f)
-            logging.info("Done")
+
+def build_dataset_page(
+    builder: tfds.core.DatasetBuilder,
+    pkg: str,
+    ds_read_config: tfds.ReadConfig,
+    dataset_doc_path: str,
+    template: Template,
+):
+    builder.download_and_prepare()
+    split_key = list(builder.info.splits.keys())[0]
+    builder_dataset = builder.as_dataset(split=split_key, read_config=ds_read_config).take(10)
+    ds_df = tfds.as_dataframe(builder_dataset, builder.info)
+    decoded_ds_df_values = _decode_df_values(ds_df.values)
+
+    infos = dict(
+        name=str(builder.info.name),
+        version=str(builder.info.version),
+        release_notes=list(builder.release_notes.items()),
+        description=str(builder.info.description),
+        homepage=str(builder.info.homepage),
+        download_size=str(builder.info.download_size),
+        dataset_size=str(builder.info.dataset_size),
+        features=str(builder.info.features),
+        supervised_keys=str(builder.info.supervised_keys),
+        splits=list(builder.info.splits.items()),
+        citation=str(builder.info.citation),
+        license=str(builder.info.redistribution_info.license),
+        examples={"columns": ds_df.columns, "rows": decoded_ds_df_values},
+    )
+
+    with open(os.path.join(dataset_doc_path, f"{pkg}.md"), "w", encoding="utf8") as f:
+        logging.info("Saving...")
+        print(template.render(**infos), file=f)
+        logging.info("Done")
+
+
+def build_multiconfig_dataset_page(
+    builder: tfds.core.DatasetBuilder,
+    pkg: str,
+    ds_read_config: tfds.ReadConfig,
+    dataset_doc_path: str,
+    template: Template,
+):
+    default_infos = dict(
+        name=str(builder.info.name),
+        description=str(builder.info.description),
+        homepage=str(builder.info.homepage),
+        version=str(builder.info.version),
+        release_notes=list(builder.release_notes.items()),
+        citation=str(builder.info.citation),
+        default_config=str(builder.BUILDER_CONFIGS[0].name),
+        license=str(builder.info.redistribution_info.license),
+    )
+    config_infos = []
+    for config in builder.BUILDER_CONFIGS:
+        builder = tfds.builder(f"{pkg}/{config.name}")
+        builder.download_and_prepare()
+
+        split_key = list(builder.info.splits.keys())[0]
+        builder_dataset = builder.as_dataset(split=split_key, read_config=ds_read_config).take(10)
+        ds_df = tfds.as_dataframe(builder_dataset, builder.info)
+        decoded_ds_df_values = _decode_df_values(ds_df.values)
+
+        config_infos.append(
+            dict(
+                name=config.name,
+                description=config.description,
+                dataset_size=str(builder.info.dataset_size),
+                download_size=str(builder.info.download_size),
+                splits=list(builder.info.splits.items()),
+                features=str(builder.info.features),
+                examples={"columns": ds_df.columns, "rows": decoded_ds_df_values},
+            )
+        )
+
+    with open(os.path.join(dataset_doc_path, f"{pkg}.md"), "w", encoding="utf8") as f:
+        logging.info("Saving...")
+        print(template.render(**default_infos, configs=config_infos), file=f)
+        logging.info("Done")
 
 
 def _decode_df_values(df_values):
