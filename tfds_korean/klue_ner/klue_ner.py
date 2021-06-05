@@ -39,7 +39,7 @@ class KlueNer(tfds.core.GeneratorBasedBuilder):
                     "labels": tfds.features.Sequence(tfds.features.Text()),
                 }
             ),
-            supervised_keys=("token", "label"),
+            supervised_keys=("tokens", "labels"),
             homepage="https://github.com/KLUE-benchmark/KLUE",
             citation=_CITATION,
             redistribution_info={"license": _LICENSE},
