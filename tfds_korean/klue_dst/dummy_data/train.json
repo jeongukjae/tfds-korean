@@ -1,0 +1,30 @@
+[
+    {
+        "guid": "train-000",
+        "domains": [
+            "domain3",
+            "domain4"
+        ],
+        "dialogue": [
+            {
+                "role": "user",
+                "text": "발화 1",
+                "state": [
+                    "state1"
+                ]
+            },
+            {
+                "role": "sys",
+                "text": "sys 발화 1"
+            },
+            {
+                "role": "user",
+                "text": "발화 3",
+                "state": [
+                    "state1",
+                    "state2"
+                ]
+            }
+        ]
+    }
+]

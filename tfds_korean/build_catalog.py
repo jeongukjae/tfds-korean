@@ -4,6 +4,7 @@ import os
 from typing import Iterable
 
 import numpy as np
+import tensorflow as tf
 import tensorflow_datasets.public_api as tfds
 from absl import logging
 from jinja2 import Template
@@ -183,6 +184,12 @@ def _decode_df_values(df_values):
 def _decode_cell(cell):
     if isinstance(cell, np.ndarray):
         cell = cell.tolist()
+
+    if isinstance(cell, tf.RaggedTensor):
+        value = [f"[{_decode_cell(val.numpy()).replace('<br>', ', ')}]" for val in cell]
+        if len(value) > 5:
+            value = value[:4] + ["..."]
+        return "<br>".join(value)
 
     if isinstance(cell, bytes):
         value = cell.decode("utf8").strip().replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br>")

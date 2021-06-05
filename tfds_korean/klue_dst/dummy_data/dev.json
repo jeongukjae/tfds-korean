@@ -1,0 +1,23 @@
+[
+    {
+        "guid": "dev-000",
+        "domains": [
+            "domain1",
+            "domain2"
+        ],
+        "dialogue": [
+            {
+                "role": "user",
+                "text": "발화 1",
+                "state": [
+                    "state1",
+                    "state2"
+                ]
+            },
+            {
+                "role": "sys",
+                "text": "sys 발화 1"
+            }
+        ]
+    }
+]
