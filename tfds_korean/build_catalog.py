@@ -91,6 +91,7 @@ def build_dataset_page(
     split_key = list(builder.info.splits.keys())[0]
     builder_dataset = builder.as_dataset(split=split_key, read_config=ds_read_config).take(10)
     ds_df = tfds.as_dataframe(builder_dataset, builder.info)
+    ds_df = ds_df[_get_ordered_columns(builder.info.features)]  # reorder columns
     decoded_ds_df_values = _decode_df_values(ds_df.values)
 
     infos = dict(
@@ -140,6 +141,7 @@ def build_multiconfig_dataset_page(
         split_key = list(builder.info.splits.keys())[0]
         builder_dataset = builder.as_dataset(split=split_key, read_config=ds_read_config).take(10)
         ds_df = tfds.as_dataframe(builder_dataset, builder.info)
+        ds_df = ds_df[_get_ordered_columns(builder.info.features)]  # reorder columns
         decoded_ds_df_values = _decode_df_values(ds_df.values)
 
         config_infos.append(
@@ -158,6 +160,20 @@ def build_multiconfig_dataset_page(
         logging.info("Saving...")
         print(template.render(**default_infos, configs=config_infos), file=f)
         logging.info("Done")
+
+
+def _get_ordered_columns(feature_dict: tfds.features.FeaturesDict):
+    keys = []
+    for key, value in feature_dict.items():
+        if isinstance(value, tfds.features.FeaturesDict):
+            keys.extend([f"{key}/{inner_key}" for inner_key in _get_ordered_columns(value)])
+            continue
+        if isinstance(value, tfds.features.Sequence) and isinstance(value.feature, tfds.features.FeaturesDict):
+            keys.extend([f"{key}/{inner_key}" for inner_key in _get_ordered_columns(value)])
+            continue
+        keys.append(key)
+
+    return keys
 
 
 def _decode_df_values(df_values):

@@ -65,14 +65,14 @@ class PetitionsArchive(tfds.core.GeneratorBasedBuilder):
             description=_DESCRIPTION,
             features=tfds.features.FeaturesDict(
                 {
+                    "petition_idx": tfds.features.Text(),
+                    "title": tfds.features.Text(),
                     "category": tfds.features.Text(),
+                    "content": tfds.features.Text(),
                     "begin": tfds.features.Text(),
                     "end": tfds.features.Text(),
-                    "content": tfds.features.Text(),
-                    "num_agree": tfds.features.Tensor(shape=[], dtype=tf.int32),
-                    "petition_idx": tfds.features.Text(),
                     "status": tfds.features.Text(),
-                    "title": tfds.features.Text(),
+                    "num_agree": tfds.features.Tensor(shape=[], dtype=tf.int32),
                 }
             ),
             supervised_keys=None,

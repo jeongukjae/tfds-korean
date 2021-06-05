@@ -41,11 +41,11 @@ class SciNewsSumKr50(tfds.core.GeneratorBasedBuilder):
             features=tfds.features.FeaturesDict(
                 {
                     "title": tfds.features.Text(),
+                    "summaries": tfds.features.Tensor(shape=[None], dtype=tf.int32),
+                    "sentences": tfds.features.Tensor(shape=[None], dtype=tf.string),
                     "source": tfds.features.Text(),
                     "slug": tfds.features.Text(),
                     "length": tfds.features.Tensor(shape=[], dtype=tf.int32),
-                    "summaries": tfds.features.Tensor(shape=[None], dtype=tf.int32),
-                    "sentences": tfds.features.Tensor(shape=[None], dtype=tf.string),
                 }
             ),
             supervised_keys=None,

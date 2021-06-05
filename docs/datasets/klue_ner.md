@@ -43,18 +43,18 @@ For more details, see [KLUE Benchmark - NER Task - Overview description](https:/
 
 * Examples:
 
-  | |labels|tokens|
+  | |tokens|labels|
   |---|---|---|
-  |1|B-PS<br>I-PS<br>O<br>O<br>...|존<br>스<br><br>부<br>...|
-  |2|B-DT<br>I-DT<br>O<br>O<br>...|3<br>월<br>에<br>는<br>...|
-  |3|B-PS<br>I-PS<br>I-PS<br>I-PS<br>...|김<br><br>참<br>관<br>...|
-  |4|B-PS<br>I-PS<br>I-PS<br>O<br>...|박<br>인<br>비<br>(<br>...|
-  |5|B-PS<br>I-PS<br>I-PS<br>I-PS<br>...|안<br><br>시<br>인<br>...|
-  |6|O<br>O<br>O<br>B-PS<br>...|앞<br>서<br><br>레<br>...|
-  |7|O<br>O<br>O<br>O<br>...|감<br>독<br>의<br><br>...|
-  |8|B-DT<br>I-DT<br>I-DT<br>O<br>...|1<br>4<br>일<br>(<br>...|
-  |9|O<br>O<br>O<br>O<br>...|이<br><br>해<br>커<br>...|
-  |10|O<br>O<br>O<br>O<br>...|조<br>사<br><br>과<br>...|
+  |1|존<br>스<br><br>부<br>...|B-PS<br>I-PS<br>O<br>O<br>...|
+  |2|3<br>월<br>에<br>는<br>...|B-DT<br>I-DT<br>O<br>O<br>...|
+  |3|김<br><br>참<br>관<br>...|B-PS<br>I-PS<br>I-PS<br>I-PS<br>...|
+  |4|박<br>인<br>비<br>(<br>...|B-PS<br>I-PS<br>I-PS<br>O<br>...|
+  |5|안<br><br>시<br>인<br>...|B-PS<br>I-PS<br>I-PS<br>I-PS<br>...|
+  |6|앞<br>서<br><br>레<br>...|O<br>O<br>O<br>B-PS<br>...|
+  |7|감<br>독<br>의<br><br>...|O<br>O<br>O<br>O<br>...|
+  |8|1<br>4<br>일<br>(<br>...|B-DT<br>I-DT<br>I-DT<br>O<br>...|
+  |9|이<br><br>해<br>커<br>...|O<br>O<br>O<br>O<br>...|
+  |10|조<br>사<br><br>과<br>...|O<br>O<br>O<br>O<br>...|
 
 * Citation:
 

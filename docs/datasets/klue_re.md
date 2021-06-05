@@ -57,18 +57,18 @@ For more details, see [KLUE Benchmark - RE Task - Overview description](https://
 
 * Examples:
 
-  | |guid|label|object_entity/end_idx|object_entity/start_idx|object_entity/type|object_entity/word|sentence|source|subject_entity/end_idx|subject_entity/start_idx|subject_entity/type|subject_entity/word|
+  | |guid|sentence|subject_entity/word|subject_entity/start_idx|subject_entity/end_idx|subject_entity/type|object_entity/word|object_entity/start_idx|object_entity/end_idx|object_entity/type|label|source|
   |---|---|---|---|---|---|---|---|---|---|---|---|---|
-  |1|klue-re-v1_train_28110|per:title|14|12|POH|수비수|응우옌 콩푸엉, 일본 수비수 도미야스 다케히로 등 성장 가능성이 높은 선수들을 키워내...|wikitree|24|16|PER|도미야스 다케히로|
-  |2|klue-re-v1_train_16650|no_relation|26|22|DAT|1945년|스기타 쇼이치(1924년 7월 1일 ~ 1945년 4월 15일)는 태평양 전쟁 당시에...|wikipedia|55|48|ORG|일본 제국 해군|
-  |3|klue-re-v1_train_11917|per:children|8|4|PER|베아트리스|그러나 베아트리스가 어머니인 빅토리아 여왕으로부터 혈우병 인자를 물려받은 탓에 그녀의...|wikipedia|22|16|PER|빅토리아 여왕|
-  |4|klue-re-v1_train_19166|no_relation|33|29|PER|타르타로스|하지만, 이후 크로노스는 키클롭스와 헤카톤케이레스를 타르타로스에 다시 감금했는데, 헤...|wikipedia|76|70|PER|헤카톤케이레스|
-  |5|klue-re-v1_train_12447|per:employee_of|55|52|POH|프리큐어|"카스가노 우라라"(うらら 한국명:"김초원")는 토에이 애니메이션 제작의 애니메이션《...|wikipedia|8|1|PER|카스가노 우라라|
-  |6|klue-re-v1_train_22309|no_relation|33|26|LOC|콘스탄티노폴리스|동고트족 왕 테오다하드가 교황 아가피토 1세를 콘스탄티노폴리스에 보내었으나 유스티니아...|wikipedia|48|42|PER|유스티니아누스|
-  |7|klue-re-v1_train_05928|no_relation|94|92|POH|개신교|노무현 정부에서 사학 비리 척결을 위해 사학법 개정을 추진하자 사학 자율권 침해를 이...|wikipedia|76|74|PER|이명박|
-  |8|klue-re-v1_train_12418|org:member_of|31|26|POH|프리미어리그|외질은 4-0으로 이긴 애스턴 빌라와의 마지막 프리미어리그 경기에서 올리비에 지루의 ...|wikipedia|74|68|ORG|토트넘 홋스퍼|
-  |9|klue-re-v1_train_00228|per:spouse|12|7|PER|마리 테레즈|오스트리아의 마리 테레즈(1638년 9월 10일 ~ 1683년 7월 30일)는 프랑스...|wikipedia|59|54|PER|루이 14세|
-  |10|klue-re-v1_train_19438|org:member_of|2|0|ORG|국방부|국방부는 구타행위가 계속 적발됨에 따라 향후 인성결함자들의 입영을 차단하기 위해 인성...|wikipedia|77|75|ORG|병무청|
+  |1|klue-re-v1_train_28110|응우옌 콩푸엉, 일본 수비수 도미야스 다케히로 등 성장 가능성이 높은 선수들을 키워내...|도미야스 다케히로|16|24|PER|수비수|12|14|POH|per:title|wikitree|
+  |2|klue-re-v1_train_16650|스기타 쇼이치(1924년 7월 1일 ~ 1945년 4월 15일)는 태평양 전쟁 당시에...|일본 제국 해군|48|55|ORG|1945년|22|26|DAT|no_relation|wikipedia|
+  |3|klue-re-v1_train_11917|그러나 베아트리스가 어머니인 빅토리아 여왕으로부터 혈우병 인자를 물려받은 탓에 그녀의...|빅토리아 여왕|16|22|PER|베아트리스|4|8|PER|per:children|wikipedia|
+  |4|klue-re-v1_train_19166|하지만, 이후 크로노스는 키클롭스와 헤카톤케이레스를 타르타로스에 다시 감금했는데, 헤...|헤카톤케이레스|70|76|PER|타르타로스|29|33|PER|no_relation|wikipedia|
+  |5|klue-re-v1_train_12447|"카스가노 우라라"(うらら 한국명:"김초원")는 토에이 애니메이션 제작의 애니메이션《...|카스가노 우라라|1|8|PER|프리큐어|52|55|POH|per:employee_of|wikipedia|
+  |6|klue-re-v1_train_22309|동고트족 왕 테오다하드가 교황 아가피토 1세를 콘스탄티노폴리스에 보내었으나 유스티니아...|유스티니아누스|42|48|PER|콘스탄티노폴리스|26|33|LOC|no_relation|wikipedia|
+  |7|klue-re-v1_train_05928|노무현 정부에서 사학 비리 척결을 위해 사학법 개정을 추진하자 사학 자율권 침해를 이...|이명박|74|76|PER|개신교|92|94|POH|no_relation|wikipedia|
+  |8|klue-re-v1_train_12418|외질은 4-0으로 이긴 애스턴 빌라와의 마지막 프리미어리그 경기에서 올리비에 지루의 ...|토트넘 홋스퍼|68|74|ORG|프리미어리그|26|31|POH|org:member_of|wikipedia|
+  |9|klue-re-v1_train_00228|오스트리아의 마리 테레즈(1638년 9월 10일 ~ 1683년 7월 30일)는 프랑스...|루이 14세|54|59|PER|마리 테레즈|7|12|PER|per:spouse|wikipedia|
+  |10|klue-re-v1_train_19438|국방부는 구타행위가 계속 적발됨에 따라 향후 인성결함자들의 입영을 차단하기 위해 인성...|병무청|75|77|ORG|국방부|0|2|ORG|org:member_of|wikipedia|
 
 * Citation:
 

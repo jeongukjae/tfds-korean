@@ -35,12 +35,12 @@ class Korsts(tfds.core.GeneratorBasedBuilder):
             description=_DESCRIPTION,
             features=tfds.features.FeaturesDict(
                 {
-                    "genre": tfds.features.Text(),
-                    "filename": tfds.features.Text(),
-                    "year": tfds.features.Text(),
                     "sentence1": tfds.features.Text(),
                     "sentence2": tfds.features.Text(),
                     "score": tfds.features.Tensor(shape=[], dtype=tf.float32),
+                    "genre": tfds.features.Text(),
+                    "filename": tfds.features.Text(),
+                    "year": tfds.features.Text(),
                 }
             ),
             supervised_keys=None,
