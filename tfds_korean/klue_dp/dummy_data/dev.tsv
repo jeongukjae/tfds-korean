@@ -1,0 +1,9 @@
+## 토큰, 레이블 구분자 : \t
+## 토큰 구분자 : \n
+## 문장 구분자 : \n\n
+## 주석 : ##
+## 칼럼명 : INDEX	WORD_FORM	LEMMA	POS	HEAD	DEPREL
+## klue-dp-v1_dev0	dev 문장
+1	dev_word1	dev_lemma1	dev_POS1	0	dev_DEPREL1
+2	dev_word2	dev_lemma2	dev_POS2	1	dev_DEPREL2
+3	dev_word3	dev_lemma3	dev_POS3	2	dev_DEPREL3

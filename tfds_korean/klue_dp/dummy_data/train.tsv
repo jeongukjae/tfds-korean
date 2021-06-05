@@ -1,0 +1,17 @@
+## 토큰, 레이블 구분자 : \t
+## 토큰 구분자 : \n
+## 문장 구분자 : \n\n
+## 주석 : ##
+## 칼럼명 : INDEX	WORD_FORM	LEMMA	POS	HEAD	DEPREL
+## klue-dp-v1_train0	문장 1234567
+1	word1	lemma1	POS1	0	DEPREL1
+2	word2	lemma2	POS2	1	DEPREL2
+3	word3	lemma3	POS3	2	DEPREL3
+
+## klue-dp-v1_train1	예시 문장 문장
+1	word01	lemma01	POS01	0	DEPREL01
+2	word02	lemma02	POS02	1	DEPREL02
+3	word03	lemma03	POS03	2	DEPREL03
+
+## klue-dp-v1_train2	대충 이런 식으로 생겼어요.
+1	train_word01	train_lemma01	train_POS01	0	train_DEPREL01
