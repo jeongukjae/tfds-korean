@@ -1,0 +1,20 @@
+[
+    {
+        "guid": "dev-00",
+        "sentence": "dev 문장 123456",
+        "subject_entity": {
+            "word": "dev",
+            "start_idx": 0,
+            "end_idx": 0,
+            "type": "PER"
+        },
+        "object_entity": {
+            "word": "문장",
+            "start_idx": 1,
+            "end_idx": 1,
+            "type": "PER"
+        },
+        "label": "relation2",
+        "source": "source1"
+    }
+]

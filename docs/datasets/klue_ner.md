@@ -33,7 +33,7 @@ For more details, see [KLUE Benchmark - NER Task - Overview description](https:/
   })
   ```
 
-* Supervised keys: `('token', 'label')`
+* Supervised keys: `('tokens', 'labels')`
 * Splits:
 
   | Split Name | Num Examples        |
