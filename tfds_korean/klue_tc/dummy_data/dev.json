@@ -1,0 +1,10 @@
+[
+    {
+        "guid": "dev-0000",
+        "title": "뉴스 제목 1",
+        "predefined_news_category": "IT과학",
+        "label": "IT과학",
+        "url": "https://example.com",
+        "date": "2021 ~~~"
+    }
+]
