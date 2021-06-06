@@ -5,8 +5,9 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 
 _DESCRIPTION = """
-Machine Reading Comprehension (MRC) task of KLUE benchmark.
-For more details, see [KLUE Benchmark - NER Task - Overview description](https://klue-benchmark.com/tasks/69/overview/description)
+KLUE benchmark - Machine Reading Comprehension (MRC) task.
+
+or more details, see [KLUE Benchmark - MRC Task - Overview description](https://klue-benchmark.com/tasks/72/overview/description)
 """
 
 _CITATION = """
@@ -22,7 +23,7 @@ _CITATION = """
 
 _LICENSE = """
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-See also [Copyright notice](https://klue-benchmark.com/tasks/69/overview/copyright).
+See also [Copyright notice](https://klue-benchmark.com/tasks/72/overview/copyright).
 """
 
 
@@ -61,8 +62,8 @@ class KlueMrc(tfds.core.GeneratorBasedBuilder):
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):
         files = dl_manager.download_and_extract(
             {
-                "train": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/4e33d961cec4ecd04073269ef9d26ee33ae5b7cd/klue_benchmark/klue-mrc-v1/klue-mrc-v1_train.json",
-                "dev": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/4e33d961cec4ecd04073269ef9d26ee33ae5b7cd/klue_benchmark/klue-mrc-v1/klue-mrc-v1_dev.json",
+                "train": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/ab22cd5cfdd6b527a9a4e2d177f9dacb85ddde2c/klue_benchmark/klue-mrc-v1/klue-mrc-v1_train.json",
+                "dev": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/ab22cd5cfdd6b527a9a4e2d177f9dacb85ddde2c/klue_benchmark/klue-mrc-v1/klue-mrc-v1_dev.json",
             }
         )
 
