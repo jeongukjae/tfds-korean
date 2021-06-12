@@ -3,7 +3,7 @@ layout: default
 title: Dataset Catalog
 ---
 
-# tfds-korean(`0.2.0`) Catalog
+# tfds-korean(`0.3.0rc0`) Catalog
 
 A collection of Korean Text Datasets ready to use using [Tensorflow-Datasets](https://github.com/tensorflow/datasets).
 
@@ -54,6 +54,7 @@ A collection of Korean Text Datasets ready to use using [Tensorflow-Datasets](ht
 * [korquad](./datasets/korquad.html)
 * [korsts](./datasets/korsts.html)
 * [kowikitext](./datasets/kowikitext.html)
+* [namuwiki_corpus](./datasets/namuwiki_corpus.html)
 * [namuwikitext](./datasets/namuwikitext.html)
 * [nlp_challenge](./datasets/nlp_challenge.html)
 * [nsmc](./datasets/nsmc.html)
