@@ -6,6 +6,8 @@ The dataset for the paper [_KorNLI and KorSTS: New Benchmark Datasets for Korean
 
 For more details, see <https://github.com/kakaobrain/KorNLUDatasets>.
 This work is licensed under the [Creative Commons Attribution-ShareAlike license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
+* label order: `["entailment", "neutral", "contradiction"]`
 """
 
 _CITATION = """
@@ -25,9 +27,10 @@ _LICENSE = """
 class Kornli(tfds.core.GeneratorBasedBuilder):
     """DatasetBuilder for kornli dataset."""
 
-    VERSION = tfds.core.Version("1.0.0")
+    VERSION = tfds.core.Version("1.0.1")
     RELEASE_NOTES = {
         "1.0.0": "Initial release.",
+        "1.0.1": "Fixed to use the same ClassName as the nli datasets in tfds.",
     }
 
     def _info(self) -> tfds.core.DatasetInfo:
@@ -38,7 +41,7 @@ class Kornli(tfds.core.GeneratorBasedBuilder):
                 {
                     "sentence1": tfds.features.Text(),
                     "sentence2": tfds.features.Text(),
-                    "gold_label": tfds.features.ClassLabel(names=["neutral", "contradiction", "entailment"]),
+                    "gold_label": tfds.features.ClassLabel(names=["entailment", "neutral", "contradiction"]),
                 }
             ),
             supervised_keys=None,

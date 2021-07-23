@@ -8,7 +8,7 @@ KLUE benchmark - Natural Language Inference(NLI) task.
 
 For more details, see [KLUE Benchmark - NLI Task - Overview description](https://klue-benchmark.com/tasks/68/overview/description)
 
-* label order: `["entailment", "contradiction", "neutral"]`
+* label order: `["entailment", "neutral", "contradiction"]`
 """
 
 _CITATION = """
@@ -31,8 +31,11 @@ See also [Copyright notice](https://klue-benchmark.com/tasks/68/overview/copyrig
 class KlueNli(tfds.core.GeneratorBasedBuilder):
     """DatasetBuilder for klue_nli dataset."""
 
-    VERSION = tfds.core.Version("1.0.0")
-    RELEASE_NOTES = {"1.0.0": "Initial release."}
+    VERSION = tfds.core.Version("1.0.1")
+    RELEASE_NOTES = {
+        "1.0.0": "Initial release.",
+        "1.0.1": "Fixed to use the same ClassName as the nli datasets in tfds.",
+    }
 
     def _info(self) -> tfds.core.DatasetInfo:
         return tfds.core.DatasetInfo(
@@ -43,7 +46,7 @@ class KlueNli(tfds.core.GeneratorBasedBuilder):
                     "guid": tfds.features.Text(),
                     "premise": tfds.features.Text(),
                     "hypothesis": tfds.features.Text(),
-                    "gold_label": tfds.features.ClassLabel(names=["entailment", "contradiction", "neutral"]),
+                    "gold_label": tfds.features.ClassLabel(names=["entailment", "neutral", "contradiction"]),
                 }
             ),
             supervised_keys=None,
