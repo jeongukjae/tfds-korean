@@ -28,8 +28,11 @@ See also [Copyright notice](https://klue-benchmark.com/tasks/71/overview/copyrig
 class KlueDp(tfds.core.GeneratorBasedBuilder):
     """DatasetBuilder for klue_dp dataset."""
 
-    VERSION = tfds.core.Version("1.0.0")
-    RELEASE_NOTES = {"1.0.0": "Initial release."}
+    VERSION = tfds.core.Version("1.1.0")
+    RELEASE_NOTES = {
+        "1.0.0": "Initial release.",
+        "1.1.0": "KLUE 1.1.0",
+    }
 
     def _info(self) -> tfds.core.DatasetInfo:
 
@@ -54,8 +57,8 @@ class KlueDp(tfds.core.GeneratorBasedBuilder):
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):
         splits = dl_manager.download_and_extract(
             {
-                "train": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/ab22cd5cfdd6b527a9a4e2d177f9dacb85ddde2c/klue_benchmark/klue-dp-v1/klue-dp-v1_train.tsv",
-                "dev": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/ab22cd5cfdd6b527a9a4e2d177f9dacb85ddde2c/klue_benchmark/klue-dp-v1/klue-dp-v1_dev.tsv",
+                "train": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/1cc52e64c0e0b6915577244f7439c55a42199a64/klue_benchmark/klue-dp-v1.1/klue-dp-v1.1_train.tsv",
+                "dev": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/1cc52e64c0e0b6915577244f7439c55a42199a64/klue_benchmark/klue-dp-v1.1/klue-dp-v1.1_dev.tsv",
             }
         )
 

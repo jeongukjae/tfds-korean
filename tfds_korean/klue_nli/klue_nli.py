@@ -31,10 +31,11 @@ See also [Copyright notice](https://klue-benchmark.com/tasks/68/overview/copyrig
 class KlueNli(tfds.core.GeneratorBasedBuilder):
     """DatasetBuilder for klue_nli dataset."""
 
-    VERSION = tfds.core.Version("1.0.1")
+    VERSION = tfds.core.Version("1.1.0")
     RELEASE_NOTES = {
         "1.0.0": "Initial release.",
         "1.0.1": "Fixed to use the same ClassName as the nli datasets in tfds.",
+        "1.1.0": "KLUE 1.1.0",
     }
 
     def _info(self) -> tfds.core.DatasetInfo:
@@ -58,8 +59,8 @@ class KlueNli(tfds.core.GeneratorBasedBuilder):
     def _split_generators(self, dl_manager: tfds.download.DownloadManager):
         splits = dl_manager.download(
             {
-                "train": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/ab22cd5cfdd6b527a9a4e2d177f9dacb85ddde2c/klue_benchmark/klue-nli-v1/klue-nli-v1_train.json",
-                "dev": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/ab22cd5cfdd6b527a9a4e2d177f9dacb85ddde2c/klue_benchmark/klue-nli-v1/klue-nli-v1_dev.json",
+                "train": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/1cc52e64c0e0b6915577244f7439c55a42199a64/klue_benchmark/klue-nli-v1.1/klue-nli-v1.1_train.json",
+                "dev": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/1cc52e64c0e0b6915577244f7439c55a42199a64/klue_benchmark/klue-nli-v1.1/klue-nli-v1.1_dev.json",
             }
         )
 

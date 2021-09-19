@@ -29,8 +29,11 @@ See also [Copyright notice](https://klue-benchmark.com/tasks/66/overview/copyrig
 class KlueTc(tfds.core.GeneratorBasedBuilder):
     """DatasetBuilder for klue_tc dataset."""
 
-    VERSION = tfds.core.Version("1.0.0")
-    RELEASE_NOTES = {"1.0.0": "Initial release."}
+    VERSION = tfds.core.Version("1.1.0")
+    RELEASE_NOTES = {
+        "1.0.0": "Initial release.",
+        "1.1.0": "KLUE 1.1.0",
+    }
 
     def _info(self) -> tfds.core.DatasetInfo:
         return tfds.core.DatasetInfo(
@@ -56,8 +59,8 @@ class KlueTc(tfds.core.GeneratorBasedBuilder):
         """Returns SplitGenerators."""
         splits = dl_manager.download_and_extract(
             {
-                "train": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/ab22cd5cfdd6b527a9a4e2d177f9dacb85ddde2c/klue_benchmark/ynat-v1/ynat-v1_train.json",
-                "dev": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/ab22cd5cfdd6b527a9a4e2d177f9dacb85ddde2c/klue_benchmark/ynat-v1/ynat-v1_dev.json",
+                "train": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/1cc52e64c0e0b6915577244f7439c55a42199a64/klue_benchmark/ynat-v1.1/ynat-v1.1_train.json",
+                "dev": "https://raw.githubusercontent.com/KLUE-benchmark/KLUE/1cc52e64c0e0b6915577244f7439c55a42199a64/klue_benchmark/ynat-v1.1/ynat-v1.1_dev.json",
             }
         )
 
