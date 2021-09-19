@@ -20,10 +20,11 @@ For more details, see [KLUE Benchmark - NER Task - Overview description](https:/
 
 * [See codes in GitHub](https://github.com/jeongukjae/tfds-korean/blob/main/tfds_korean/klue_ner/klue_ner.py)
 * Version:
-  * `1.0.0` (default): Initial release.
+  * `1.0.0` False: Initial release.
+  * `1.1.0` (default): KLUE 1.1.0
 * Homepage: <https://github.com/KLUE-benchmark/KLUE>
 * Download size: `12.59 MiB`
-* Dataset size: `11.70 MiB`
+* Dataset size: `11.71 MiB`
 * Features:
 
   ```python

@@ -20,7 +20,8 @@ For more details, see [KLUE Benchmark - TC Task - Overview description](https://
 
 * [See codes in GitHub](https://github.com/jeongukjae/tfds-korean/blob/main/tfds_korean/klue_tc/klue_tc.py)
 * Version:
-  * `1.0.0` (default): Initial release.
+  * `1.0.0` False: Initial release.
+  * `1.1.0` (default): KLUE 1.1.0
 * Homepage: <https://github.com/KLUE-benchmark/KLUE>
 * Download size: `52.75 MiB`
 * Dataset size: `16.76 MiB`

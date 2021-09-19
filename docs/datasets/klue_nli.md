@@ -23,7 +23,8 @@ For more details, see [KLUE Benchmark - NLI Task - Overview description](https:/
 * [See codes in GitHub](https://github.com/jeongukjae/tfds-korean/blob/main/tfds_korean/klue_nli/klue_nli.py)
 * Version:
   * `1.0.0` False: Initial release.
-  * `1.0.1` (default): Fixed to use the same ClassName as the nli datasets in tfds.
+  * `1.0.1` False: Fixed to use the same ClassName as the nli datasets in tfds.
+  * `1.1.0` (default): KLUE 1.1.0
 * Homepage: <https://github.com/KLUE-benchmark/KLUE>
 * Download size: `13.42 MiB`
 * Dataset size: `7.33 MiB`

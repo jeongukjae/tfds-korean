@@ -20,7 +20,8 @@ For more details, see [KLUE Benchmark - DP Task - Overview description](https://
 
 * [See codes in GitHub](https://github.com/jeongukjae/tfds-korean/blob/main/tfds_korean/klue_dp/klue_dp.py)
 * Version:
-  * `1.0.0` (default): Initial release.
+  * `1.0.0` False: Initial release.
+  * `1.1.0` (default): KLUE 1.1.0
 * Homepage: <https://github.com/KLUE-benchmark/KLUE>
 * Download size: `7.11 MiB`
 * Dataset size: `6.40 MiB`
