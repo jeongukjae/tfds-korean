@@ -1,5 +1,7 @@
 """korean_wikipedia_corpus dataset."""
 
+import os
+
 import tensorflow_datasets as tfds
 
 _DESCRIPTION = """
@@ -58,6 +60,7 @@ class KoreanWikipediaCorpus(tfds.core.GeneratorBasedBuilder):
         """Yields examples."""
         for docs_file in path.glob("*/wiki_*"):
             with docs_file.open() as f:
+                filename = os.path.split(str(f))[-1]
                 title = ""
                 content = []
 
@@ -66,7 +69,7 @@ class KoreanWikipediaCorpus(tfds.core.GeneratorBasedBuilder):
 
                     if line == "":
                         if title != "":
-                            yield f"{str(f)}-{index}-{title}", {
+                            yield f"{filename}-{index}-{title}", {
                                 "title": title,
                                 "content": content,
                             }

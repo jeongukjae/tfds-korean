@@ -1,5 +1,7 @@
 """namuwiki_corpus dataset."""
 
+import os
+
 import tensorflow_datasets as tfds
 
 _DESCRIPTION = """
@@ -54,6 +56,8 @@ class NamuwikiCorpus(tfds.core.GeneratorBasedBuilder):
     def _generate_examples(self, path):
         for docs_file in path.glob("namu_*"):
             with docs_file.open() as f:
+                filename = os.path.split(str(f))[-1]
+
                 title = ""
                 content = []
 
@@ -62,7 +66,7 @@ class NamuwikiCorpus(tfds.core.GeneratorBasedBuilder):
 
                     if line == "":
                         if title != "":
-                            yield f"{str(f)}-{index}-{title}", {
+                            yield f"{filename}-{index}-{title}", {
                                 "title": title,
                                 "content": content,
                             }
@@ -77,7 +81,7 @@ class NamuwikiCorpus(tfds.core.GeneratorBasedBuilder):
                     content.append(line)
 
                 if title != "":
-                    yield f"{str(f)}-{index}-{title}", {
+                    yield f"{filename}-{index}-{title}", {
                         "title": title,
                         "content": content,
                     }
